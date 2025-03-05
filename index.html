@@ -5,69 +5,66 @@
     <link rel="stylesheet" href="style.css">
 </head>
     <body>
+        <div class="sized-box"></div>
         <h1>Welcome to my project portfolio!</h1>
         <h2>My name is Nathan Au and I am Software Engineering student based in Montreal.</h2>
         <h3>Check out some of my latest and ongoing projects:</h3>
-        <div class="project">
-            <h4>Amicae - flutter mobile app</h4>
-            <p>WORK IN PROGRESS</p>
-        </div>
-        <div class="project">
-            <h4>Project 2</h4>
-            <p>WORK IN PROGRESS</p>
-        </div>
-        <p>WORK IN PROGRESS</p>
+       
 
-
-        <div class="project-card">
-            <div class="project-card-inner">
-              <div class="project-card-front">
-                <p>Amicae - mobile flutter app</p>
-              </div>
-              <div class="project-card-back">
-                <h1>John Doe</h1> 
-                <p>Architect & Engineer</p> 
-                <p>We love that guy</p>
-              </div>
-            </div>
-        </div>
-
-        <div class="project-card">
-            <div class="project-card-inner">
-              <div class="project-card-front">
-                <p>Amicae - mobile flutter app</p>
-              </div>
-              <div class="project-card-back">
-                <h1>John Doe</h1> 
-                <p>Architect & Engineer</p> 
-                <p>We love that guy</p>
-              </div>
-            </div>
-        </div>
-
-        <div class="project-card">
-            <div class="project-card-inner">
-              <div class="project-card-front">
-                <p>Amicae - mobile flutter app</p>
-              </div>
-              <div class="project-card-back">
-                <h1>John Doe</h1> 
-                <p>Architect & Engineer</p> 
-                <p>We love that guy</p>
-              </div>
-            </div>
-        </div>
-
-        <style>
-
-           
-            
-  
-        </style>
-                        
         <a href="https://www.linkedin.com/in/-nathanau/" target="_blank">
-            <img src="linkedin_logo.png" alt="LinkedIn" style="width:50px;height:50px">
+            <img src="./assets/linkedin_logo.png" alt="LinkedIn" style="width:50px;height:50px">
         </a>
+        <a href="https://github.com/nathan-au" target="_blank">
+            <img src="./assets/github_logo.png" alt="GitHub" style="width:50px;height:50px">
+        </a>
+        <button class="email-button" popovertarget="email-popover">            
+            <img src="./assets/gmail_logo.png" alt="Gmail" style="width:50px;height:50px">
+        </button>
+        <div id="email-popover" popover>im.nathanau@gmail.com</div>
+        
 
+        <h2>Experience</h2>
+        <div class="experience-card">
+            <h3>Verification Engineering Intern @ Renaissance Network Reinvent</h3>
+            <p>
+                Designed and implemented functionality tests for computer systems and network hardware, collaborated with cross-functional teams to debug and resolve performance issues, and optimized inventory tracking and data management systems for import/export logistics.
+            </p>
+        </div>
+
+        <h2>Education</h2>
+        <div class="education-card">
+            <h3>Software Engineering @ Concordia University</h3>
+            <p>
+                <ul>
+                    
+                </ul>
+            </p>
+        </div>
+
+        <h2>Projects</h2>
+        <div class="project-card">
+            <h3>TypR: Personalized Typing Practice & Testing</h3>
+            <p>
+                A Python CLI application designed to enhance users' keyboard skills by providing customized typing practice, diverse text prompts, and performance tracking for speed and accuracy.
+            </p>
+        </div>
+        <div class="project-card">
+            <h3>Bender: All-Terrain Rover Bot</h3>
+            <p>
+                A remote-controlled rover with autonomous capabilities, built from a Quantum Rehab power wheelchair, integrating ArduPilot Mission Planner, CubePilot Cube Orange+, PX4 Pixhawk 1, SiK 3DR Telemetry, and a Zorro Radio Controller, with 3D-printable structural supports for various components.
+            </p>
+        </div>
+        <div class="project-card">
+            <h3>Graduation Ceremony Slideshow System</h3>
+            <p>
+                A full-stack web application for managing slideshow presentations at graduation ceremonies, allowing organizers to display student information and students to submit details, with integrations including Google Sign-In OAuth 2.0, TinyMCE WYSIWYG editor, and Bootstrap for an enhanced user experience.
+            </p>
+        </div>
+                    
+        <script>
+            function emailAlert() {
+                alert("Email: im.nathanau@gmail.com");
+            }
+        </script>
     </body>
 </html>
