@@ -1,13 +1,12 @@
 body {
-    /* text-align: center; */
-
     font-family: "Lucida Console", monospace;
-    background-color: #FAF9F6;
+    background-color: #FAF9F6; 
     padding-left: 5%;
     padding-right: 5%;
-    margin-top: 15%;
+    margin-top: 5%;
     color: #1E1E1E;
     border: 10px solid #1E1E1E;
+    border-radius: 10px;
 
 }
 
@@ -36,7 +35,13 @@ ul {
     margin: 10px;
     padding-left: 10px;
     padding-right: 10px;
+    transition: 0.5s;
+    border-radius: 10px;
+}
 
+.project-card:hover, .education-card:hover, .experience-card:hover {
+    /* border: 10px solid red; */
+    transform: scale(1.05);
 }
 
 .email-button {
@@ -53,4 +58,11 @@ ul {
 .logo {
     width: 50px;
     height: 50px;
+    transition: 0.5s;
 }
+.logo:hover {
+    transform: scale(1.1);
+}
+/* hr {
+    border: 3px solid #1E1E1E;
+} */
