@@ -6,6 +6,20 @@ body {
     padding-left: 5%;
     padding-right: 5%;
     margin-top: 15%;
+    color: #1E1E1E;
+    border: 10px solid #1E1E1E;
+
+}
+
+.dark-mode {
+    background-color: #1E1E1E;
+    color: #FAF9F6;
+    border: 10px solid #FAF9F6;
+
+}
+
+.invert-colors {
+    filter: invert(100%);
 }
 
 a {
