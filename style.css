@@ -1,19 +1,22 @@
 body {
     font-family: "Lucida Console", monospace;
     background-color: #FAF9F6; 
+    color: #1E1E1E;
+}
+
+.portfolio-container {
     padding-left: 5%;
     padding-right: 5%;
     margin-top: 5%;
-    color: #1E1E1E;
     border: 10px solid #1E1E1E;
     border-radius: 10px;
-
 }
+
+
 
 .dark-mode {
     background-color: #1E1E1E;
     color: #FAF9F6;
-    border: 10px solid #FAF9F6;
 
 }
 
@@ -66,3 +69,27 @@ ul {
 /* hr {
     border: 3px solid #1E1E1E;
 } */
+
+
+.login-container {
+    font-family: "Lucida Console", monospace;
+    background-color: #FAF9F6; 
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 5%;
+    color: #1E1E1E;
+    border: 10px solid #1E1E1E;
+    border-radius: 10px;
+    width: 30%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.login-field {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 3px solid #1E1E1E;
+    width: 30%;
+    text-align: center;
+}
