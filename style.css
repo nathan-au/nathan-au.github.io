@@ -12,11 +12,15 @@ body {
     border-radius: 10px;
 }
 
-
-
-.dark-mode {
+.body-dark-mode {
     background-color: #1E1E1E;
     color: #FAF9F6;
+
+
+}
+
+.dark-mode {
+    border: 10px solid #FAF9F6;
 
 }
 
@@ -24,13 +28,8 @@ body {
     filter: invert(100%);
 }
 
-a {
+.logo-anchor {
     text-decoration: none;
-}
-
-ul {
-    text-align: left;
-    list-style-position: inside;
 }
 
 .project-card, .education-card, .experience-card {
