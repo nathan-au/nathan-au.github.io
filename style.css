@@ -2,14 +2,17 @@ body {
     font-family: "Lucida Console", monospace;
     background-color: #FAF9F6; 
     color: #1E1E1E;
+    transition: background-color 1s ease, color 1s ease;
+
+
 }
 
 .portfolio-container {
     padding-left: 5%;
     padding-right: 5%;
-    margin-top: 5%;
     border: 10px solid #1E1E1E;
     border-radius: 10px;
+
 }
 
 .body-dark-mode {
@@ -19,13 +22,9 @@ body {
 
 }
 
-.dark-mode {
-    border: 10px solid #FAF9F6;
-
-}
-
 .invert-colors {
     filter: invert(100%);
+
 }
 
 .logo-anchor {
@@ -39,11 +38,19 @@ body {
     padding-right: 10px;
     transition: 0.5s;
     border-radius: 10px;
+    transition: background-color 1s ease, color 1s ease;
+
+
+}
+
+.container-dark-mode {
+    border: 5px solid #FAF9F6;
+
 }
 
 .project-card:hover, .education-card:hover, .experience-card:hover {
     /* border: 10px solid red; */
-    transform: scale(1.05);
+    transform: scale(1.025);
 }
 
 .email-button {
