@@ -2,21 +2,15 @@ body {
     font-family: "Lucida Console", monospace;
     background-color: #FAF9F6; 
     color: #1E1E1E;
-    /* transition: background-color 1s ease, color 1s ease; */
+    transition: background-color 1s ease, color 1s ease;
 
 }
 
+.body-dark-mode {
+    background-color: #1E1E1E;
+    color: #FAF9F6;
+    transition: background-color 1s ease, color 1s ease;
 
-
-body.overlay-active *:not(#email-overlay):not(#email-envelope) {
-    pointer-events: none;
-    transition: 0s;
-    user-select: none;
-
-}
-
-body.overlay-active{
-    overflow: hidden;
 }
 
 .portfolio-container {
@@ -27,74 +21,60 @@ body.overlay-active{
 
 }
 
-.body-dark-mode {
-    background-color: #1E1E1E;
-    color: #FAF9F6;
-
-
-}
-
 .invert-colors {
     filter: invert(100%);
-
 }
 
-.logo-link {
-    text-decoration: none;
-}
+
 
 .card {
     border: 5px solid #0F52BA;
     margin: 10px;
     padding-left: 10px;
     padding-right: 10px;
-    transition: 0.5s;
+    /* transition: 0.5s; */
     border-radius: 10px;
-    /* transition: background-color 1s ease, color 1s ease; */
-
+    
+    /* animation-name: blackWhite;
+    animation-iteration-count: infinite;
+    animation-duration: 5s; */
 
 }
 
-.container-dark-mode {
-    border: 5px solid #FAF9F6;
+/* @keyframes blackWhite {  
+    from {  
+        border-color: #0F52BA;  
+    }
+    to {  
+        border-color: #c019a7;  
+    }
+} */
 
+.card-dark-mode {
+    /* border: 5px solid #FAF9F6; */
 }
 
 .card:hover {
-    border: 10px solid red;
     transform: scale(1.025);
-}
-
-#email-envelope {
-    position: fixed;
-    /* padding: 200px; */
-    background-color: #FAF9F6;
-    border: 5px solid #0F52BA;
-    color: #1E1E1E;
-    border-radius: 10px;
-    display: none;
-    top: 50%;
-    left: 50%;    
-    transform: translate(-50%, -50%);
-    pointer-events: auto;
-    user-select: all;
-    width: 50%;
-    height: 30%;
-    padding: 20px;
-    text-align: center;
-
-
 }
 
 .logo {
     width: 50px;
     height: 50px;
     transition: 0.5s;
-    cursor: pointer;    
+
 }
 .clickable-logo:hover{
-    transform: scale(1.1);
 
+    cursor: pointer;    
+    transform: scale(1.1);
+}
+.logo-link {
+    text-decoration: none;
+}
+
+.dark-mode-toggle {
+    
 }
 
 td {
@@ -122,3 +102,33 @@ td {
     pointer-events: auto;
     user-select: auto;
 }
+
+#email-envelope {
+    position: fixed;
+    background-color: #FAF9F6;
+    border: 5px solid #0F52BA;
+    color: #1E1E1E;
+    border-radius: 10px;
+    display: none;
+    top: 50%;
+    left: 50%;    
+    transform: translate(-50%, -50%);
+    pointer-events: auto;
+    user-select: all;
+    width: 50%;
+    height: 30%;
+    padding: 20px;
+    text-align: center;
+}
+
+body.email-overlay-active *:not(#email-overlay):not(#email-envelope) {
+    pointer-events: none;
+    transition: 0s;
+    user-select: none;
+
+}
+
+body.email-overlay-active{
+    overflow: hidden;
+}
+
