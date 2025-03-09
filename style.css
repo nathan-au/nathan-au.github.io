@@ -61,14 +61,8 @@ body.overlay-active{
 }
 
 .card:hover {
-    /* border: 10px solid red; */
+    border: 10px solid red;
     transform: scale(1.025);
-}
-
-.email-button {
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
 }
 
 #email-envelope {
@@ -96,20 +90,12 @@ body.overlay-active{
     width: 50px;
     height: 50px;
     transition: 0.5s;
-    cursor: pointer;
-
-    
+    cursor: pointer;    
 }
-.logo:hover {
+.clickable-logo:hover{
     transform: scale(1.1);
+
 }
-/* .logo:active {
-    transition: none;
-    transform: scale(1);
-} */
-/* hr {
-    border: 3px solid #1E1E1E;
-} */
 
 td {
     padding: 10px;
