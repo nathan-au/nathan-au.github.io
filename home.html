@@ -8,64 +8,123 @@
 </head>
     <body>   
         <div class="portfolio-container">
-            <h1>Welcome to my project portfolio!</h1> 
+            <div id="email-overlay" onclick="hideEmailOverlay()"></div>
+            <div id="email-envelope">
+                <p>Nathan Au</p>
+                <p>im.nathanau@gmail.com</p>
+                <p>Montreal, Quebec, Canada</p>
+            </div>
+        
+            <h1>NATHAN AU</h1> 
             <button class="" onclick="toggleDarkMode()">Toggle dark mode</button>
 
             <h2>My name is Nathan Au and I am Software Engineering student based in Montreal.</h2>
         
             
-            <a class="logo-anchor" href="https://www.linkedin.com/in/-nathanau/" target="_blank">
+            <a class="logo-link" href="https://www.linkedin.com/in/-nathanau/" target="_blank">
                 <img class="logo" src="./assets/linkedin_logo.png" alt="LinkedIn">
             </a>
-            <a class="logo-anchor" href="https://github.com/nathan-au" target="_blank">
+            <a class="logo-link" href="https://github.com/nathan-au" target="_blank">
                 <img class="logo invertible-logo" src="./assets/github_logo.png" alt="GitHub">
             </a>
-            <button class="email-button" popovertarget="email-popover">            
+            <a onclick="showEmailOverlay()">
                 <img class="logo" src="./assets/gmail_logo.png" alt="Gmail">
-            </button>
-            <div id="email-popover" popover>im.nathanau@gmail.com</div>
+            </a>
             <!-- <hr> -->            
              
             <h3>Check out some of my latest and ongoing projects:</h3>
 
             <h2>Projects</h2>
-            <div class="project-card">
-                <h3>TypR: Personalized Typing Practice & Testing</h3>
-                <p>
-                    A Python CLI application designed to enhance users' keyboard skills by providing customized typing practice, diverse text prompts, and performance tracking for speed and accuracy.
-                </p>
+            <div class="card">
+                <table>
+                    <tr>
+                        <td class="logo-table-cell">
+                            <!-- <a href="https://github.com/nathan-au/grad-d" target="_blank">
+                                <img class="logo invertible-logo" src="./assets/github_logo.png" alt="GitHub">
+                            </a> -->
+                        </td>
+                        <td class="title-table-cell">
+                            <h3>TypR: Personalized Typing Practice & Testing</h3>
+
+                        </td>
+                        <td class="description-table-cell">
+                            <p>A Python CLI application designed to enhance users' keyboard skills by providing customized typing practice, diverse text prompts, and performance tracking for speed and accuracy.</p>
+                        </td>
+                    </tr>
+                </table>
             </div>
-            <div class="project-card">
-                <h3>Bender: All-Terrain Rover Bot</h3>
-                <p>
-                    A remote-controlled rover with autonomous capabilities, built from a Quantum Rehab power wheelchair, integrating ArduPilot Mission Planner, CubePilot Cube Orange+, PX4 Pixhawk 1, SiK 3DR Telemetry, and a Zorro Radio Controller, with 3D-printable structural supports for various components.
-                </p>
+            <div class="card">
+                <table>
+                    <tr>
+                        <td class="logo-table-cell">
+                            <!-- <a href="https://github.com/nathan-au/grad-d" target="_blank">
+                                <img class="logo invertible-logo" src="./assets/github_logo.png" alt="GitHub">
+                            </a> -->
+                        </td>
+                        <td class="title-table-cell">
+                            <h3>Bender: All-Terrain Rover Bot</h3>
+
+                        </td>
+                        <td class="description-table-cell">
+                            <p>A remote-controlled rover with autonomous capabilities, built from a Quantum Rehab power wheelchair, integrating ArduPilot Mission Planner, CubePilot Cube Orange+, PX4 Pixhawk 1, SiK 3DR Telemetry, and a Zorro Radio Controller, with 3D-printable structural supports for various components.</p>
+                        </td>
+                    </tr>
+                </table>
             </div>
-            <div class="project-card">
-                <h3>Graduation Ceremony Slideshow System</h3>
-                <p>
-                    A full-stack web application for managing slideshow presentations at graduation ceremonies, allowing organizers to display student information and students to submit details, with integrations including Google Sign-In OAuth 2.0, TinyMCE WYSIWYG editor, and Bootstrap for an enhanced user experience.
-                </p>
-                <a href="https://github.com/nathan-au/grad-d" target="_blank">
-                    <img class="logo invertible-logo" src="./assets/github_logo.png" alt="GitHub">
-                </a>
+            <div class="card">
+                <table>
+                    <tr>
+                        <td class="logo-table-cell">
+                            <a href="https://github.com/nathan-au/grad-d" target="_blank">
+                                <img class="logo invertible-logo" src="./assets/github_logo.png" alt="GitHub">
+                            </a>
+                        </td>
+                        <td class="title-table-cell">
+                            <h3>Graduation Ceremony Slideshow System</h3>
+
+                        </td>
+                        <td class="description-table-cell">
+                            <p>A full-stack web application for managing slideshow presentations at graduation ceremonies, allowing organizers to display student information and students to submit details, with integrations including Google Sign-In OAuth 2.0, TinyMCE WYSIWYG editor, and Bootstrap for an enhanced user experience.</p>
+                        </td>
+                    </tr>
+                </table>
+                
                 
             </div>
 
             <h2>Experience</h2>
-            <div class="experience-card">
-                <h3>Verification Engineering Intern @ Renaissance Network Reinvent - Ottawa, Ontario</h3>
-                <p>
-                    Designed and implemented functionality tests for computer systems and network hardware, collaborated with cross-functional teams to debug and resolve performance issues, and optimized inventory tracking and data management systems for import/export logistics.
-                </p>
+            <div class="card">
+                <table>
+                    <tr>
+                        <td class="logo-table-cell">
+                            <img class="logo" src="./assets/renRNS_logo.jpg" alt="Renaissance Network Reinvent">
+                        </td>
+                        <td class="title-table-cell">
+                            <h3>Verification Engineering Intern @ Renaissance Network Reinvent</h3>
+                        </td>
+                        <td class="description-table-cell">
+                            <p>Designed and implemented functionality tests for computer systems and network hardware, collaborated with cross-functional teams to debug and resolve performance issues, and optimized inventory tracking and data management systems for import/export logistics.</p>
+                        </td>
+                    </tr>
+                </table>
             </div>
 
+            
             <h2>Education</h2>
-            <div class="education-card">
-                <h3>Software Engineering @ Concordia University - Montreal, Quebec</h3>
-                <p>
-                    Bachelor of Engineering - B.Eng. Co-op 2024-2029
-                </p>
+            <div class="card">
+                <table>
+                    <tr>
+                        <td class="logo-table-cell">
+                            <img class="logo" src="./assets/concordia_logo.png" alt="Concordia University">
+                        </td>
+                        <td class="title-table-cell">
+                            <h3>Software Engineering @ Concordia University - Montreal, QC</h3>
+                        </td>
+                        <td class="description-table-cell">
+                            <p>Bachelor of Engineering - B.Eng. Co-op 2024-2029</p>
+                        </td>
+                    </tr>
+                </table>
             </div>
 
             

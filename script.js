@@ -13,3 +13,17 @@ function toggleDarkMode() {
         }
     );
 }
+
+function showEmailOverlay() {
+    document.getElementById("email-overlay").style.display = "block";
+    document.getElementById("email-envelope").style.display = "block";
+    document.body.classList.add("overlay-active"); // Disables interaction with other elements
+
+}
+function hideEmailOverlay() {
+    document.getElementById("email-overlay").style.display = "none";
+    document.getElementById("email-envelope").style.display = "none";
+    document.body.classList.remove("overlay-active"); // Re-enables interaction
+    
+
+}
