@@ -3,7 +3,6 @@ body {
     background-color: #FAF9F6; 
     color: #1E1E1E;
     transition: background-color 1s ease, color 1s ease;
-
 }
 
 .body-dark-mode {
@@ -24,8 +23,6 @@ body {
 .invert-colors {
     filter: invert(100%);
 }
-
-
 
 .card {
     border: 5px solid #0F52BA;
@@ -50,9 +47,7 @@ body {
     }
 } */
 
-.card-dark-mode {
-    /* border: 5px solid #FAF9F6; */
-}
+
 
 .card:hover {
     transform: scale(1.025);
@@ -69,12 +64,8 @@ body {
     cursor: pointer;    
     transform: scale(1.1);
 }
-.logo-link {
+.remove-text-decoration {
     text-decoration: none;
-}
-
-.dark-mode-toggle {
-    
 }
 
 td {
@@ -125,10 +116,8 @@ body.email-overlay-active *:not(#email-overlay):not(#email-envelope) {
     pointer-events: none;
     transition: 0s;
     user-select: none;
-
 }
 
 body.email-overlay-active{
     overflow: hidden;
 }
-
