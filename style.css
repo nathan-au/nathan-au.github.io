@@ -8,8 +8,6 @@ body {
 .body-dark-mode {
     background-color: #1E1E1E;
     color: #FAF9F6;
-    transition: background-color 1s ease, color 1s ease;
-
 }
 
 .portfolio-container {
@@ -20,8 +18,40 @@ body {
 
 }
 
+.name-title {
+    font-size: 15vw; /* Adjust this value as needed */
+    text-align: center;
+    white-space: nowrap; /* Prevents line breaks */
+    margin: 0;
+    padding: 20px;
+}
+
+.links-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
 .invert-colors {
     filter: invert(100%);
+}
+
+.hide-element {
+    display: none;
+}
+
+.toggle-dark-mode-button {
+    border: 2.5px solid #0F52BA;
+    border-radius: 10px;
+    width: fit-content;
+    padding: 10px;
+    transition: transform 0.5s;
+    font-size: small;
+    text-align: center;
+}
+.toggle-dark-mode-button:hover {
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
 .card {
@@ -29,7 +59,7 @@ body {
     margin: 10px;
     padding-left: 10px;
     padding-right: 10px;
-    /* transition: 0.5s; */
+    transition: transform 1s ease-out;
     border-radius: 10px;
     
     /* animation-name: blackWhite;

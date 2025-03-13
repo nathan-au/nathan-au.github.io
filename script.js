@@ -12,7 +12,15 @@ function toggleDarkMode() {
             element.classList.toggle("invert-colors");
         }
     );
+
+    var darkModeIcon = document.getElementById("dark-mode-icon");
+    var lightModeIcon = document.getElementById("light-mode-icon");
+    
+    darkModeIcon.classList.toggle("hide-element");
+    lightModeIcon.classList.toggle("hide-element");
+    
 }
+
 
 function showEmailOverlay() {
     document.getElementById("email-overlay").style.display = "block";
