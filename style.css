@@ -24,6 +24,7 @@ body {
     white-space: nowrap; /* Prevents line breaks */
     margin: 0;
     padding: 20px;
+    
 }
 
 .links-container {
@@ -61,6 +62,7 @@ body {
     padding-right: 10px;
     transition: transform 1s ease-out;
     border-radius: 10px;
+    overflow: overlay;
     
     /* animation-name: blackWhite;
     animation-iteration-count: infinite;
