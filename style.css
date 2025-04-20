@@ -2,7 +2,7 @@ body {
     font-family: "Lucida Console", monospace;
     background-color: #FAF9F6; 
     color: #1E1E1E;
-    transition: background-color 1s ease, color 1s ease;
+    transition: background-color 1s, color 1s;
 }
 
 .body-dark-mode {
@@ -11,73 +11,98 @@ body {
 }
 
 .portfolio-container {
-    padding-left: 5%;
-    padding-right: 5%;
+    /* padding-left: 5%; */
+    /* padding-right: 5%; */
     border: 10px solid #0F52BA;
     border-radius: 10px;
+    width: 80%;
+    max-width: 2000px;
+    min-width: 400px;
+    margin: auto;
 
+}
+.card-container {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.intro-content {
+    font-size: clamp(16px, 4vw, 40px);
+    text-align: center; 
+}
+
+.section-title {
+    text-align: center;
+    font-size: clamp(40px, 5vw, 100px); 
+    margin: 0;
+    padding: 20px;
 }
 
 .name-title {
-    font-size: 15vw; /* Adjust this value as needed */
     text-align: center;
-    white-space: nowrap; /* Prevents line breaks */
     margin: 0;
     padding: 20px;
-    
+    font-size: clamp(40px, 10vw, 200px);
+
 }
 
-.links-container {
+.top-right-corner {
+    position: fixed;
+    top: 5%;
+    right: 5%;
+}
+
+.socials-container {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: clamp(40px, 5vw, 100px);
 }
 
 .invert-colors {
     filter: invert(100%);
 }
+.no-margin {
+    margin: 0;
+}
 
 .hide-element {
     display: none;
 }
+.logo {
+    width: clamp(40px, 5vw, 100px);
+    height: clamp(40px, 5vw, 100px);
 
-.toggle-dark-mode-button {
-    border: 2.5px solid #0F52BA;
+    border: 2.5px solid transparent;
     border-radius: 10px;
-    width: fit-content;
-    padding: 10px;
-    transition: transform 0.5s;
-    font-size: small;
+
+    transition: filter 1s, transform 0.25s ease;
+
+}
+.toggle-dark-mode-button {
+    display: grid;
+    align-items: center;
     text-align: center;
+    font-size: small;
+    border-color: #0F52BA;
 }
 .toggle-dark-mode-button:hover {
     transform: scale(1.1);
     cursor: pointer;
 }
 
+.invertible-logo {
+}
+
 .card {
     border: 5px solid #0F52BA;
     margin: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-    transition: transform 1s ease-out;
+    padding: 10px;
+    transition: transform 0.25s ease;
     border-radius: 10px;
-    overflow: overlay;
-    
-    /* animation-name: blackWhite;
-    animation-iteration-count: infinite;
-    animation-duration: 5s; */
+
 
 }
 
-/* @keyframes blackWhite {  
-    from {  
-        border-color: #0F52BA;  
-    }
-    to {  
-        border-color: #c019a7;  
-    }
-} */
 
 
 
@@ -85,33 +110,17 @@ body {
     transform: scale(1.025);
 }
 
-.logo {
-    width: 50px;
-    height: 50px;
-    transition: 0.5s;
 
+.small-logo {
+    width: 25px;
+    height: 25px;
 }
 .clickable-logo:hover{
-
     cursor: pointer;    
     transform: scale(1.1);
 }
 .remove-text-decoration {
     text-decoration: none;
-}
-
-td {
-    padding: 10px;
-}
-
-.logo-table-cell {
-    width: 5%;
-}
-.title-table-cell {
-    width: 35%;
-}
-.description-table-cell {
-    width: 60%;
 }
 
 #email-overlay {
