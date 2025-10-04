@@ -11,40 +11,61 @@ body {
 }
 
 .portfolio-container {
-    /* padding-left: 5%; */
-    /* padding-right: 5%; */
     border: 10px solid #0F52BA;
     border-radius: 10px;
     width: 80%;
     max-width: 2000px;
     min-width: 400px;
     margin: auto;
+    padding: 2%;
 
 }
-.card-container {
-    margin-left: 2%;
-    margin-right: 2%;
+.section-container {
+    /* margin-left: 2%; */
+    /* margin-right: 2%; */
+    /* border: solid 1px red; */
+    padding-top: 2%;
 }
-
-.intro-content {
-    font-size: clamp(16px, 4vw, 40px);
+.intro-title {
+    text-align: center;
+    font-size: clamp(40px, 10vw, 200px);
+}
+.intro-subtitle {
     text-align: center; 
+    font-size: clamp(20px, 2.5vw, 50px);
 }
 
 .section-title {
     text-align: center;
-    font-size: clamp(40px, 5vw, 100px); 
-    margin: 0;
-    padding: 20px;
+    font-size: clamp(20px, 5vw, 100px);
 }
 
-.name-title {
+.card-title {
+    /* text-align: center; */
+    font-size: clamp(15px, 2.5vw, 50px);
+
+}
+.card-header {
     text-align: center;
-    margin: 0;
-    padding: 20px;
-    font-size: clamp(40px, 10vw, 200px);
-
 }
+
+.table-of-contents {
+    text-align: center;
+    margin-top: 1%;
+}
+
+hr {
+    margin-bottom: 0;
+    margin-top: 1%;
+
+    border: none;
+    height: 5px;
+    background-color: #0F52BA;
+    border-radius: 10px;
+    width: 75%;
+}
+
+
 
 .top-right-corner {
     position: fixed;
@@ -56,6 +77,7 @@ body {
     display: flex;
     justify-content: center;
     gap: clamp(40px, 5vw, 100px);
+    margin-top: 1%;
 }
 
 .invert-colors {
@@ -69,8 +91,8 @@ body {
     display: none;
 }
 .logo {
-    width: clamp(40px, 5vw, 100px);
-    height: clamp(40px, 5vw, 100px);
+    width: clamp(20px, 5vw, 100px);
+    height: clamp(20px, 5vw, 100px);
 
     border: 2.5px solid transparent;
     border-radius: 10px;
@@ -90,40 +112,43 @@ body {
     cursor: pointer;
 }
 
-.invertible-logo {
-}
 
 .card {
     border: 5px solid #0F52BA;
-    margin: 10px;
-    padding: 10px;
-    transition: transform 0.25s ease;
+    /* margin: 10px; */
+    /* padding: 10px; */
+    padding: 1%;
     border-radius: 10px;
-
-
+    margin-top: 1%;
 }
-
-
-
-
-.card:hover {
+.clickable-card:hover {
     transform: scale(1.025);
+    cursor: pointer;
+    transition: transform 0.25s ease;
+
 }
+
+.card-footer {
+    text-align: center;
+}
+
+
 
 
 .small-logo {
     width: 25px;
     height: 25px;
 }
-.clickable-logo:hover{
+.clickable-logo:hover {
     cursor: pointer;    
     transform: scale(1.1);
 }
+
 .remove-text-decoration {
     text-decoration: none;
 }
 
-#email-overlay {
+#modal-overlay {
     position: fixed;
     width: 100%;
     height: 100%;
@@ -135,30 +160,65 @@ body {
     user-select: auto;
 }
 
-#email-envelope {
+.modal {
     position: fixed;
     background-color: #FAF9F6;
-    border: 5px solid #0F52BA;
     color: #1E1E1E;
     border-radius: 10px;
     display: none;
     top: 50%;
     left: 50%;    
     transform: translate(-50%, -50%);
-    pointer-events: auto;
+    pointer-events: all;
     user-select: all;
-    width: 50%;
-    height: 30%;
-    padding: 20px;
+    
+    width: 80%;
+    max-width: 2000px;
+    min-width: 400px;
+    margin: auto;
+
+
+    border: 5px solid #0F52BA;
+    /* margin: 10px; */
+    /* padding: 10px; */
+    transition: transform 0.25s ease;
+
+    padding: 1%;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+.modal-header {
     text-align: center;
 }
 
-body.email-overlay-active *:not(#email-overlay):not(#email-envelope) {
+
+
+body.modal-overlay-active *:not(#modal-overlay):not(.modal):not(.modal *) {
     pointer-events: none;
     transition: 0s;
     user-select: none;
 }
 
-body.email-overlay-active{
+body.modal-overlay-active .modal, body.modal-overlay-active .modal * {
+    pointer-events: auto;
+    user-select: none; /* disables text selection inside modals */
+}
+
+body.modal-overlay-active {
     overflow: hidden;
+}
+
+.content-image {
+    width: clamp(200px, 35vw, 1000px);
+    border-radius: 10px;
+    margin-bottom: 1%;
+}
+
+p {
+    margin: 0;
+}
+
+#email-copied {
+    display: none;
 }
