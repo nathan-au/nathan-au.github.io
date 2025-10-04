@@ -98,6 +98,8 @@ hr {
     border-radius: 10px;
 
     transition: filter 1s, transform 0.25s ease;
+    user-select: none;
+
 
 }
 .toggle-dark-mode-button {
@@ -211,9 +213,11 @@ body.modal-overlay-active {
 }
 
 .content-image {
-    width: clamp(200px, 35vw, 1000px);
+    width: clamp(200px, 35vw, 600px);
     border-radius: 10px;
     margin-bottom: 1%;
+    user-select: none;
+
 }
 
 p {
@@ -231,7 +235,7 @@ p {
 }
 
 .body-dark-mode #modal-overlay {
-    background-color: rgba(255,255,255,0.1);
+    background-color: rgba(255,255,255,0.25);
 
 }
 
@@ -254,4 +258,10 @@ body {
     font-family: "Google Sans Code", monospace;
     font-optical-sizing: auto;
     font-style: normal;
+}
+
+.bubble {
+    border: 2.5px solid #0F52BA;
+    border-radius: 100px;
+    padding: 0.5%;
 }
