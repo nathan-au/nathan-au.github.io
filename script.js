@@ -13,12 +13,17 @@ function toggleDarkMode() {
         }
     );
 
+    document.querySelectorAll(".modal").forEach(
+        element => {
+            element.classList.toggle("modal-dark-mode");
+        }
+    );
+
     var darkModeIcon = document.getElementById("dark-mode-icon");
     var lightModeIcon = document.getElementById("light-mode-icon");
     
     darkModeIcon.classList.toggle("hide-element");
     lightModeIcon.classList.toggle("hide-element");
-    
 }
 
 
