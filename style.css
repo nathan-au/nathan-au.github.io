@@ -146,6 +146,7 @@ hr {
 
 .remove-text-decoration {
     text-decoration: none;
+    
 }
 
 #modal-overlay {
@@ -232,4 +233,8 @@ p {
 .body-dark-mode #modal-overlay {
     background-color: rgba(255,255,255,0.1);
 
+}
+
+html {
+    scroll-behavior: smooth;
 }

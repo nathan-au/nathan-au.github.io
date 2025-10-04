@@ -55,3 +55,10 @@ function copyEmail() {
     var minecraft_xp = new Audio('./assets/minecraft_xp.mp3');
     minecraft_xp.play();
 }
+
+// Add this once, ideally at the end of your script.js
+document.addEventListener('keydown', function(event) {
+    if (event.key === "Escape") {
+        hideModal();
+    }
+});
