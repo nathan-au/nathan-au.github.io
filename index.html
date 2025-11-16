@@ -2,7 +2,7 @@
 <html class="scroll-smooth" data-theme="halloween">
     <head>
         <title>Nathan Au</title>
-        <link rel="stylesheet" href="app.css">
+        <link rel="stylesheet" href="style.css">
         <link rel="icon" type="image/x-icon" href="./assets/chickengrass.png">
 
         <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css"/>
@@ -11,8 +11,9 @@
 
 
     </head>
+
     <body>
-        <div id="top"></div>
+        <span id="top"></span>
         <div class="hero min-h-screen">
             <div class="hero-content text-center flex flex-col gap-8">
 
@@ -32,15 +33,15 @@
 
                 <h1 class="text-9xl font-bold text-white">Nathan Au</h1>
                 <h2 class="text-4xl text-white">Software Engineering Student</h2>
-                <h3 class="text-3xl text-white">Montréal, Canada</h3>
+                <h3 class="text-3xl text-white">Montreal, Canada</h3>
                 <div class="flex flex-row gap-4">
                     <a href="https://www.linkedin.com/in/-nathanau/" target="_blank">
-                        <img class="w-16 hover:scale-110 transition-transform duration-250 shadow-lg" src="./assets/logos/InBug-White.png" alt="LinkedIn">
+                        <img class="w-16 hover:scale-110 transition-transform duration-250 shadow-lg" src="./assets/logos/linkedin_logo.png" alt="LinkedIn">
                     </a>
+
                     <a href="https://www.github.com/nathan-au" target="_blank">
-                        <img class="w-16 hover:scale-110 transition-transform duration-250 shadow-lg rounded-full" src="./assets/logos/github_logo_white.png" alt="GitHub">
+                        <img class="w-16 hover:scale-110 transition-transform duration-250 shadow-lg rounded-full" src="./assets/logos/github_logo.png" alt="GitHub">
                     </a>
-         
                 </div>
 
                 <div class="flex flex-row gap-4 mt-16">
@@ -61,12 +62,15 @@
         <span id="projects"></span>
         <div class="mx-8">
 
+
             <h1 class="text-8xl font-bold text-center my-16 text-white">Projects</h1>
 
-            <div class="flex flex-row gap-4 flex-wrap justify-center">
 
 
-                <div class="card bg-base-100 card-lg w-128 shadow-lg">
+            <div class="flex flex-wrap gap-4 justify-center">
+
+
+                <div class="card bg-base-100 card-lg sm:w-256 md:w-256 lg:w-128 shadow-lg">
                     <figure>
                         <img src="./assets/screen/macrossover_screen.png" alt="MA Crossover"/>
                     </figure>
@@ -81,8 +85,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="card bg-base-100 card-lg w-128 shadow-lg">
-                    <div class="skeleton w-128 h-64"></div>
+                <div class="card bg-base-100 card-lg sm:w-256 md:w-256 lg:w-128 shadow-lg">
+                    <div class="skeleton w-full h-64"></div>
                     <div class="card-body">
                         <h2 class="card-title text-info text-2xl">OnlyGF</h2>
                         <p>iOS mobile app for looking at pictures of your girlfriend</p>
@@ -95,7 +99,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card bg-base-100 card-lg w-128 shadow-lg">
+                <div class="card bg-base-100 card-lg sm:w-256 md:w-256 lg:w-128 shadow-lg">
                     <figure>
                         <img src="./assets/screen/rpgmini_screen.png" alt="RPG-Mini"/>
                     </figure>
@@ -112,7 +116,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card bg-base-100 card-lg w-128 shadow-lg">
+                <div class="card bg-base-100 card-lg sm:w-256 md:w-256 lg:w-128 shadow-lg">
                     <figure>
                         <img src="./assets/screen/partcart_screen.png" alt="PartCart"/>
                     </figure>
@@ -132,8 +136,8 @@
                 
                 
                 
-                <div class="card bg-base-100 card-lg w-128 shadow-lg">
-                    <div class="skeleton w-128 h-64"></div>
+                <div class="card bg-base-100 card-lg sm:w-256 md:w-256 lg:w-128 shadow-lg">
+                    <div class="skeleton w-full h-64"></div>
                     <div class="card-body">
                         <h2 class="card-title text-info text-2xl">Blackjack Game</h2>
                         <p>Command-line-interface blackjack game in C++</p>
@@ -145,7 +149,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card bg-base-100 card-lg w-128 shadow-lg">
+                <div class="card bg-base-100 card-lg sm:w-256 md:w-256 lg:w-128 shadow-lg">
                     <figure>
                         <img src="./assets/screen/amicae_screen.jpg" alt="Amicae"/>
                     </figure>
@@ -163,7 +167,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card bg-base-100 card-lg w-128 shadow-lg">
+                <div class="card bg-base-100 card-lg sm:w-256 md:w-256 lg:w-128 shadow-lg">
                     <figure>
                         <img src="./assets/screen/gradd_screen.png" alt="Grad-D"/>
                     </figure>
@@ -203,7 +207,7 @@
                         </ul>
                         <div class="flex flex-row gap-2 my-2">
                             <span class="badge badge-soft badge-info shadow-lg">Nov 2024 - Apr 2025</span>
-                            <span class="badge badge-soft badge-info shadow-lg">Hybrid / Montréal, QC</span>
+                            <span class="badge badge-soft badge-info shadow-lg">Hybrid / Montreal, QC</span>
                         </div>
                     </div>
                 </div>
@@ -248,7 +252,7 @@
                         </ul>
                         <div class="flex flex-row gap-2 my-2">
                             <span class="badge badge-soft badge-info shadow-lg">Sep 2024 - 2029 (expected)</span>
-                            <span class="badge badge-soft badge-info shadow-lg">Montréal, QC</span>
+                            <span class="badge badge-soft badge-info shadow-lg">Montreal, QC</span>
                         </div>
                     </div>
                 </div>
@@ -274,27 +278,26 @@
             </div>
         </div>
 
-        <div class="fab">
-            <div tabindex="0" role="button" class="btn btn-lg btn-circle btn-outline">?</div>
+        <div class="hidden lg:flex fab">
+            <div tabindex="0" role="button" class="btn btn-lg btn-circle btn-outline">></div>
 
             <div class="fab-main-action">
-                Back to Top <a href="#top" class="btn btn-circle btn-lg btn-outline">To</a>
+                Back to Top <a href="#top" class="btn btn-circle btn-lg btn-outline">^</a>
             </div>
-
-            <div>Education <a href="#education" class="btn btn-lg btn-circle btn-outline">Ed</a></div>
-            <div>Experience <a href="#experience" class="btn btn-lg btn-circle btn-outline">Ex</a></div>
-            <div>Projects <a href="#projects" class="btn btn-lg btn-circle btn-outline">Pr</a></div>
+            <div>Education <a href="#education" class="btn btn-lg btn-circle btn-outline">@</a></div>
+            <div>Experience <a href="#experience" class="btn btn-lg btn-circle btn-outline">$</a></div>
+            <div>Projects <a href="#projects" class="btn btn-lg btn-circle btn-outline">{ }</a></div>
         </div>
 
        <div class="mt-64 flex justify-center p-4"> 
-            <a class="btn" href="#top">Back to Top</a>
+            <a class="btn btn-outline btn-wide" href="#top">Back to Top</a>
        </div>
 
-       <footer class="footer  footer-center bg-base-100  p-4">
+        <!-- <footer class="footer  footer-center bg-base-100  p-4">
             <aside>
                 <p>Copyright © 2025 - All right reserved by Nathan Au</p>
             </aside>
-        </footer>
+        </footer> -->
 
         <!-- MODALS -->
         <input type="checkbox" id="partcart_modal" class="modal-toggle"/>
