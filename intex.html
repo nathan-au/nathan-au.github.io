@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" data-theme="dark">
+    <head>
+        <title>Nathan Au</title>
+        <link rel="stylesheet" href="app.css">
+        <link rel="icon" type="image/x-icon" href="./assets/chickengrass.png">
+
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css"/>
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css"/>
+
+
+    </head>
+    <body>
+        <div class="hero min-h-screen">
+            <div class="hero-content text-center flex flex-col gap-8">
+                
+                <h1 class="text-9xl font-bold text-center">Nathan Au</h1>
+                <h2 class="text-5xl">Software Engineering Student</h2>
+                <h3 class="text-3xl">Montréal, Canada</h3>
+                <div class="flex flex-row gap-4">
+                    <a href="https://www.linkedin.com/in/-nathanau/" target="_blank">
+                        <img class="w-16 hover:scale-110 transition-transform duration-250 shadow-lg" src="./assets/logos/linkedin_logo.png" alt="LinkedIn">
+                    </a>
+                    <a href="https://www.github.com/nathan-au" target="_blank">
+                        <img class="w-16 hover:scale-110 transition-transform duration-250 shadow-lg rounded-full" src="./assets/logos/github_logo.png" alt="GitHub">
+                    </a>
+                </div>
+
+                <div class="flex flex-row gap-4">
+                    <a href="#projects">
+                        <button class="btn">Projects</button>
+                    </a>
+                    <a href="#experience">
+                        <button class="btn">Experience</button>
+                    </a>
+                    <a href="#education">
+                        <button class="btn">Education</button>
+                    </a>
+                </div>
+            
+
+            </div>
+        </div>
+        <div id="projects"></div>
+        <h1 class="text-8xl font-bold text-center my-16">Projects</h1>
+
+        <div class="flex flex-row gap-4 flex-wrap justify-center">
+            <div class="card bg-base-100 card-lg w-128 shadow-lg">
+                <figure>
+                    <img src="./assets/screen/partcart_screen.png" alt="PartCart"/>
+                </figure>
+                <div class="card-body">
+                    <h2 class="card-title text-primary text-2xl">PartCart</h2>
+                    <p>Web application for internal use at computer repair companies to manage the workflow of part requests and order logistics.</p>
+                    <div class="flex flex-row gap-2">
+                        <span class="badge shadow-lg">Vue.js</span>
+                        <span class="badge shadow-lg">Supabase</span>
+                        <span class="badge shadow-lg">TailwindCSS</span>
+                    </div>
+                    <div class="card-actions justify-end">
+                        <label for="partcart_modal" class="btn btn-primary">Explore PartCart</label>
+                    </div>
+                </div>
+            </div>
+            <div class="card bg-base-100 card-lg w-128 shadow-lg">
+                <figure>
+                    <img src="./assets/screen/rpgmini_screen.png" alt="RPG-Mini"/>
+                </figure>
+                <div class="card-body">
+                    <h2 class="card-title text-primary text-2xl">RPG-Mini</h2>
+                    <p>End-to-end backend API framework designed for tax accounting automation</p>
+                    <div class="flex flex-row gap-2">
+                        <span class="badge shadow-lg">Python</span>
+                        <span class="badge shadow-lg">FastAPI</span>
+                        <span class="badge shadow-lg">SQLModel</span>
+                    </div>
+                    <div class="card-actions justify-end">
+                        <label for="rpgmini_modal" class="btn btn-primary">Explore RPG-Mini</label>
+                    </div>
+                </div>
+            </div>
+            <div class="card bg-base-100 card-lg w-128 shadow-lg">
+                <figure>
+                    <img src="./assets/screen/macrossover_screen.png" alt="MA Crossover"/>
+                </figure>
+                <div class="card-body">
+                    <h2 class="card-title text-primary text-2xl">MA Crossover Trading Model</h2>
+                    <p>Algorithmic trading model for the moving average crossover strategy </p>
+                    <div class="flex flex-row gap-2">
+                        <span class="badge shadow-lg">Python</span>
+                    </div>
+                    <div class="card-actions justify-end">
+                        <label for="macrossover_modal" class="btn btn-primary">Explore MA Crossover Trading Model</label>
+                    </div>
+                </div>
+            </div>
+            <div class="card bg-base-100 card-lg w-128 shadow-lg">
+                <figure>
+                    <img src="./assets/logos/github_logo.png" alt="OnlyGF"/>
+                </figure>
+                <div class="card-body">
+                    <h2 class="card-title text-primary text-2xl">OnlyGF</h2>
+                    <p>iOS mobile app for looking at pictures of your girlfriend</p>
+                    <div class="flex flex-row gap-2">
+                        <span class="badge shadow-lg">Swift</span>
+                        <span class="badge shadow-lg">SwiftUI</span>
+                    </div>
+                    <div class="card-actions justify-end">
+                        <label for="macrossover_modal" class="btn btn-primary">Explore OnlyGF</label>
+                    </div>
+                </div>
+            </div>
+            <div class="card bg-base-100 card-lg w-128 shadow-lg">
+                <figure>
+                    <img src="./assets/logos/github_logo.png" alt="Blackjack"/>
+                </figure>
+                <div class="card-body">
+                    <h2 class="card-title text-primary text-2xl">Blackjack Game</h2>
+                    <p>Command-line-interface blackjack game in C++</p>
+                    <div class="flex flex-row gap-2">
+                        <span class="badge shadow-lg">C++</span>
+                    </div>
+                    <div class="card-actions justify-end">
+                        <label for="macrossover_modal" class="btn btn-primary">Explore Blackjack Game</label>
+                    </div>
+                </div>
+            </div>
+            <div class="card bg-base-100 card-lg w-128 shadow-lg">
+                <figure>
+                    <img src="./assets/screen/amicae_screen.jpg" alt="Amicae"/>
+                </figure>
+                <div class="card-body">
+                    <h2 class="card-title text-primary text-2xl">Amicae</h2>
+                    <p>Mobile app designed to help students at Concordia University connect with potential study buddies, discover study spots, and stay updated on university events.</p>
+                    <div class="flex flex-row gap-2">
+                        <span class="badge shadow-lg">Flutter</span>
+                        <span class="badge shadow-lg">Firebase</span>
+                        <span class="badge shadow-lg">Dart</span>
+                        <span class="badge shadow-lg">Vertex AI</span>
+                    </div>
+                    <div class="card-actions justify-end">
+                        <label for="amicae_modal" class="btn btn-primary">Explore Amicae</label>
+                    </div>
+                </div>
+            </div>
+            <div class="card bg-base-100 card-lg w-128 shadow-lg">
+                <figure>
+                    <img src="./assets/screen/gradd_screen.png" alt="Grad-D"/>
+                </figure>
+                <div class="card-body">
+                    <h2 class="card-title text-primary text-2xl">West Carleton Grad System</h2>
+                    <p>Full-stack web application designed for the creation and management of slideshows for graduation ceremonies.</p>
+                    <div class="flex flex-row gap-2">
+                        <span class="badge shadow-lg">HTML</span>
+                        <span class="badge shadow-lg">CSS</span>
+                        <span class="badge shadow-lg">JavaScript</span>
+                        <span class="badge shadow-lg">PHP</span>
+                        <span class="badge shadow-lg">SQL</span>
+                    </div>
+                    <div class="card-actions justify-end">
+                        <label for="gradd_modal" class="btn btn-primary">Explore West Carleton Grad System</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div id="experience"></div>
+        <h1 class="text-8xl font-bold text-center my-16">Experience</h1>
+        <div class="flex flex-row gap-4 flex-wrap justify-center">
+            <div class="card bg-base-100 card-lg w-256 shadow-lg">
+                <div class="card-body">
+                    <div class="flex justify-center mb-2">
+                        <img class="w-32 shadow-lg" src="./assets/logos/gdgoc_logo.png"/>
+                    </div>
+                    <h2 class="card-title text-primary text-2xl">Mobile Developer @ GDGoC Concordia</h2>
+                    
+                    <ul class="list-disc list-inside">
+                        <li>Built Amicae, a cross-platform Flutter app that helps university students make connections, find study spots, and stay updated on campus events.</li>
+                        <li>Earned recognition at the project showcase for: Best UI/UX, Best Presentation, and 2nd Place Overall</li>
+                        <li>Worked with 4 other developers to complete the project goals.</li>
+                    </ul>
+                    <div class="flex flex-row gap-2">
+                        <span class="badge shadow-lg">Nov 2024 - Apr 2025</span>
+                        <span class="badge shadow-lg">Hybrid / Montréal, QC</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card bg-base-100 card-lg w-256 shadow-lg">
+                <div class="card-body">
+                    <div class="flex justify-center mb-2">
+                        <img class="w-32 shadow-lg" src="./assets/logos/renaissance_logo.jpg"/>
+                    </div>
+                    <h2 class="card-title text-primary text-2xl">Engineering Intern @ Renaissance Network Reinvent</h2>
+                    <ul class="list-disc list-inside">
+                        <li>Designed and implemented functionality tests for computer systems and network hardware.</li>
+                        <li>Worked across various teams to debug and resolve performance issues.</li>
+                        <li>Optimized inventory tracking and data management systems for import/export logistics.</li>
+                    </ul> 
+                    
+
+                    <div class="flex flex-row gap-2">
+                        <span class="badge shadow-lg">Sep 2023 - Feb 2024</span>
+                        <span class="badge shadow-lg">Ottawa, ON</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <div id="education"></div>
+        <h1 class="text-8xl font-bold text-center my-16">Education</h1>
+
+        <div class="flex flex-row gap-4 flex-wrap justify-center">
+            <div class="card bg-base-100 card-lg w-256 shadow-lg">
+                <div class="card-body">
+                    <div class="flex justify-center mb-2">
+                        <img class="w-32 shadow-lg rounded-full" src="./assets/logos/concordia_logo.png"/>
+                    </div>
+                    <h2 class="card-title text-primary text-2xl">Software Engineering @ Concordia University</h2>
+                    
+                    <ul class="list-disc list-inside">
+                        <li>Bachelor of Engineering (B.Eng.), Co-op</li>
+                        <li>GPA: 3.3/4.0</li>
+                        <li>Clubs: Google Developer Group on Campus Concordia University (GDGoC Concordia), Software Engineering and Computer Science Society (SCS), Quantitative Research and Competitions Club (QUARCC)</li>
+                        <li>Relevant Coursework: Object-Oriented Programming I, Professional Practice and Responsibility, Mathematics for Computer Science</li>
+                    </ul>
+                    <div class="flex flex-row gap-2">
+                        <span class="badge shadow-lg">Sep 2024 - 2029 (expected)</span>
+                        <span class="badge shadow-lg">Montréal, QC</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card bg-base-100 card-lg w-256 shadow-lg">
+                <div class="card-body">
+                    <div class="flex justify-center mb-2">
+                        <img class="w-32 shadow-lg" src="./assets/logos/wcss_logo.png"/>
+                    </div>
+                    <h2 class="card-title text-primary text-2xl">OSSD @ West Carleton Secondary School</h2>
+                    <ul class="list-disc list-inside">
+                        <li>Ontario Secondary School Diploma (OSSD), Information and Communications Technology Specialist High Skills Major (ICT SHSM), French Immersion Certificate (CECR DELF B2), Ontario Scholar Award, Honour Roll, Co-op</li>
+                        <li>GPA: 3.6/4.0</li>
+
+                        <li>Clubs: Boys Varsity Lacrosse Team, Link Crew, Chess Club</li>
+                        <li>Relevant Coursework: Computer Science (12), Computer Engineering Technology (11/12), Introduction to Computer Science (11), Computer Technology and the Skilled Trades (10)</li>
+                    </ul> 
+                    <div class="flex flex-row gap-2">
+                        <span class="badge shadow-lg">Sep 2020 - June 2024 </span>
+                        <span class="badge shadow-lg">Ottawa, ON</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+       <div class="mt-64 flex justify-center p-4"> 
+            <a href="#">
+                <button class="btn">Back to Top</button>
+            </a>
+       </div>
+
+        <!-- MODALS -->
+        <input type="checkbox" id="partcart_modal" class="modal-toggle"/>
+        <div class="modal" role="dialog">
+            <div class="modal-box max-w-7xl">
+                <div class="flex flex-col items-center gap-4">
+                    <img class="w-256" src="./assets/screen/partcart_screen.png" alt="Part Cart">
+                    <p class="text-3xl font-bold">PartCart: Simplifying Repair Parts Logistics</p>
+                    <a href="https://github.com/nathan-au/part-cart" target="_blank">
+                        <button class="btn bg-black text-white border-black">
+                            <svg aria-label="GitHub" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="white" d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z"></path></svg>
+                            PartCart on GitHub
+                        </button>
+                    </a>
+
+                    <p>Check out the <a class="link link-accent" href="https://github.com/nathan-au/part-cart/blob/main/README.md#demo-screenshots" target="_blank">README.md</a> for demo screenshots.</p>
+                </div>
+            </div>
+            <label class="modal-backdrop" for="partcart_modal">Close</label>
+        </div>
+
+        <input type="checkbox" id="amicae_modal" class="modal-toggle"/>
+        <div class="modal" role="dialog">
+            <div class="modal-box max-w-7xl">
+                <div class="flex flex-col items-center gap-4">
+                    <img class="w-256" src="./assets/screen/amicae_screen.jpg" alt="Amicae">
+                    <p class="text-3xl font-bold">Amicae: Your Campus Connection Companion</p>
+                    <a href="https://github.com/nathan-au/amicae" target="_blank">
+                        <button class="btn bg-black text-white border-black">
+                            <svg aria-label="GitHub" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="white" d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z"></path></svg>
+                            Amicae on GitHub
+                        </button>
+                    </a>
+                    <p>Check out the <a class="link link-accent" href="https://github.com/nathan-au/amicae/blob/main/README.md#demo-screenshots" target="_blank">README.md</a> for demo screenshots.</p>
+                </div>
+            </div>
+            <label class="modal-backdrop" for="amicae_modal">Close</label>
+        </div>
+
+        <input type="checkbox" id="gradd_modal" class="modal-toggle"/>
+        <div class="modal" role="dialog">
+            <div class="modal-box max-w-7xl">
+                <div class="flex flex-col items-center gap-4">
+                    <img class="w-256" src="./assets/screen/gradd_screen.png" alt="Grad-D">
+                    <p class="text-3xl font-bold">West Carleton Grad System: Graduation Slideshow Management</p>
+                    <a href="https://github.com/nathan-au/grad-d" target="_blank">
+                        <button class="btn bg-black text-white border-black">
+                            <svg aria-label="GitHub" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="white" d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z"></path></svg>
+                            West Carleton Grad System on GitHub
+                        </button>
+                    </a>
+                    <p>Check out the <a class="link link-accent" href="https://github.com/nathan-au/grad-d/blob/main/README.md#demo-screenshots" target="_blank">README.md</a> for demo screenshots.</p>
+                </div>
+            </div>
+            <label class="modal-backdrop" for="gradd_modal">Close</label>
+        </div>
+
+        <input type="checkbox" id="rpgmini_modal" class="modal-toggle"/>
+        <div class="modal" role="dialog">
+            <div class="modal-box max-w-7xl">
+                <div class="flex flex-col items-center gap-4">
+                    <img class="w-256" src="./assets/screen/rpgmini_screen.png" alt="RPG-Mini">
+                    <p class="text-3xl font-bold">RPG-Mini: AI-Powered Tax Accounting Automation</p>
+                    <a href="https://github.com/nathan-au/rpg-mini" target="_blank">
+                        <button class="btn bg-black text-white border-black">
+                            <svg aria-label="GitHub" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="white" d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z"></path></svg>
+                            RPG-Mini on GitHub
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <label class="modal-backdrop" for="rpgmini_modal">Close</label>
+        </div>
+
+
+
+    </body>
+</html>

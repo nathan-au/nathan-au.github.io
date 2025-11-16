@@ -1,0 +1,16 @@
+
+html {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+html::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Edge */
+}
+
+body {
+    background-image: url('./assets/background/abstract_blue.jpg');
+
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
