@@ -1,23 +1,23 @@
 const projects = [
     {
         name: "Instagram Opps v3",
-        image_path: "",
-        description: "Simple script for finding your Instagram opps: people you follow that don't follow you back",
+        image_path: "./assets/screens/instagramoppsv3_screen.png",
+        description: "Simple script for finding your Instagram opps (people you follow that don't follow you back)",
         tech_stack: ["Python", "Playwright"],
         modal_id: "instagramoppsv3_modal",
         git_repo: "https://github.com/nathan-au/instagram-opps-v3"
     },
     {
         name: "WSB-BERT",
-        image_path: "",
-        description: "Sentiment analyzer for Reddit's craziest trading community: r/WallStreetBets",
+        image_path: "./assets/screens/wsbbert_screen.png",
+        description: "NLP sentiment analysis for the craziest online trading community: r/WallStreetBets",
         tech_stack: ["Python", "FinBERT"],
         modal_id: "wsbbert_modal",
         git_repo: "https://github.com/nathan-au/wsb-bert"
     },
     {
         name: "MA Crossover Trading Model",
-        image_path: "./assets/screen/macrossover_screen.png",
+        image_path: "./assets/screens/macrossover_screen.png",
         description: "Algorithmic trading model for the moving average crossover strategy",
         tech_stack: ["Python"],
         modal_id: "macrossover_modal",
@@ -26,14 +26,14 @@ const projects = [
     {
         name: "OnlyGF",
         image_path: "",
-        description: "iOS mobile app for looking at pictures of your girlfriend",
+        description: "iOS mobile app for viewing photos of your girlfriend.",
         tech_stack: ["Swift", "SwiftUI"],
         modal_id: "onlygf_modal",
         git_repo: "https://github.com/nathan-au/only-gf"
     },
     {
         name: "RPG-Mini",
-        image_path: "./assets/screen/rpgmini_screen.png",
+        image_path: "./assets/screens/rpgmini_screen.png",
         description: "End-to-end backend API framework designed for tax accounting automation.",
         tech_stack: ["Python", "FastAPI", "SQLModel"],
         modal_id: "rpgmini_modal",
@@ -42,7 +42,7 @@ const projects = [
     
     {
         name: "PartCart",
-        image_path: "./assets/screen/partcart_screen.png",
+        image_path: "./assets/screens/partcart_screen.png",
         description: "Web application for internal use at computer repair companies to manage the workflow of part requests and order logistics.",
         tech_stack: ["Vue.js", "Supabase", "TailwindCSS"],
         modal_id: "partcart_modal",
@@ -56,10 +56,9 @@ const projects = [
         modal_id: "blackjack_modal",
         git_repo: "https://github.com/nathan-au/blackjack-game"
     },
-
     {
         name: "Amicae",
-        image_path: "./assets/screen/amicae_screen.jpg",
+        image_path: "./assets/screens/amicae_screen.jpg",
         description: "Mobile app designed to help students at Concordia University connect with potential study buddies, discover study spots, and stay updated on university events.",
         tech_stack: ["Flutter", "Firebase", "Dart", "Vertex AI"],
         modal_id: "amicae_modal",
@@ -67,13 +66,13 @@ const projects = [
     },
     {   
         name: "West Carleton Grad System",
-        image_path: "./assets/screen/gradd_screen.png",
+        image_path: "./assets/screens/gradd_screen.png",
         description: "Full-stack web application designed for the creation and management of slideshows for graduation ceremonies.",
         tech_stack: ["HTML", "CSS", "JavaScript", "PHP", "SQL"],
         modal_id: "gradd_modal",
         git_repo: "https://github.com/nathan-au/grad-d"
     }
-];
+]
 
 const projectCardsContainer = document.getElementById('project-cards-container')
 const projectModalsContainer = document.getElementById('project-modals-container')
@@ -82,24 +81,22 @@ const githubLogoSVG = "<svg aria-label=\"GitHub\" width=\"16\" height=\"16\" xml
 
 projects.forEach(project => {
 
-    const projectCard = document.createElement("div")
-    projectCard.className = "card bg-base-100 card-lg sm:w-256 md:w-256 lg:w-128 shadow-lg"
-
     let imageHTML = ""
     if (project.image_path == "") {
         imageHTML = "<div class=\"skeleton w-full h-64\"></div>"
     }
     else {
-        imageHTML = "<figure><img src=\"" + project.image_path + "\" alt=" + project.name + "/></figure>"
+        imageHTML = "<figure><img src=\"" + project.image_path + "\" alt=\"" + project.name + "\"></figure>"
     }
 
     let techStackHTML = ""
     project.tech_stack.forEach(tech => {
         techStackHTML += "<span class=\"badge badge-soft badge-info shadow-lg\">" + tech + "</span>"
     })
-
+    
+    const projectCard = document.createElement("div")
+    projectCard.className = "card bg-base-100 card-lg sm:w-256 md:w-256 lg:w-128 shadow-lg"
     projectCard.innerHTML = `
-
         ${imageHTML}
         <div class="card-body">
             <h2 class="card-title text-info text-2xl">${project.name}</h2>
@@ -111,19 +108,13 @@ projects.forEach(project => {
                 <label for="${project.modal_id}" class="btn btn-info">Explore ${project.name}</label>
             </div>
         </div>
-
     `
     projectCardsContainer.appendChild(projectCard)
 
-
     const projectModal = document.createElement("div")
-
     projectModal.innerHTML = `
-
         <input type="checkbox" id="${project.modal_id}" class="modal-toggle"/>
-
         <div class="modal" role="dialog">
-
             <div class="modal-box max-w-7xl">
                 <div class="flex flex-col items-center gap-4">
                     <img class="w-256" src="${project.image_path}" alt="${project.name}"/>
@@ -134,12 +125,11 @@ projects.forEach(project => {
                             ${project.name} on GitHub
                         </button>
                     </a>
-                    <p>Check out the <a class="link link-secondary" href="${project.git_repo}/blob/main/README.md#demo-screenshots" target="_blank">README.md</a> for demo screenshots.</p>
+                    <!-- <p>Check out the <a class="link link-secondary" href="${project.git_repo}/blob/main/README.md#demo-screenshots" target="_blank">README.md</a> for demo screenshots.</p> -->
                 </div>
             </div>
             <label class="modal-backdrop" for="${project.modal_id}">Close</label>
         </div>
-
     `
     projectModalsContainer.appendChild(projectModal)
 
