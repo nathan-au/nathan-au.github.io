@@ -9,7 +9,6 @@
         <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
         <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css"/>
 
-
     </head>
 
     <body>
@@ -31,7 +30,7 @@
                     <div></div>
                 </div>
 
-                <h1 class="text-9xl font-bold text-white">Nathan Au</h1>
+                <h1 class="text-8xl font-bold text-white">Nathan Au</h1>
                 <h2 class="text-4xl text-white">Software Engineering Student</h2>
                 <h3 class="text-3xl text-white">Montreal, Canada</h3>
                 <div class="flex flex-row gap-4">
@@ -62,132 +61,13 @@
         <span id="projects"></span>
         <div class="mx-8">
 
-
             <h1 class="text-8xl font-bold text-center my-16 text-white">Projects</h1>
+            <div id="project-cards-container" class="flex flex-wrap gap-4 justify-center"></div>
+            <div id="project-modals-container"></div>
+            <script src="projects.js"></script> 
 
-
-
-            <div class="flex flex-wrap gap-4 justify-center">
-
-
-                <div class="card bg-base-100 card-lg sm:w-256 md:w-256 lg:w-128 shadow-lg">
-                    <figure>
-                        <img src="./assets/screen/macrossover_screen.png" alt="MA Crossover"/>
-                    </figure>
-                    <div class="card-body">
-                        <h2 class="card-title text-info text-2xl">MA Crossover Trading Model</h2>
-                        <p>Algorithmic trading model for the moving average crossover strategy </p>
-                        <div class="flex flex-row gap-2 my-2">
-                            <span class="badge badge-soft badge-info shadow-lg">Python</span>
-                        </div>
-                        <div class="card-actions justify-end">
-                            <label for="macrossover_modal" class="btn btn-info">Explore MA Crossover Trading Model</label>
-                        </div>
-                    </div>
-                </div>
-                <div class="card bg-base-100 card-lg sm:w-256 md:w-256 lg:w-128 shadow-lg">
-                    <div class="skeleton w-full h-64"></div>
-                    <div class="card-body">
-                        <h2 class="card-title text-info text-2xl">OnlyGF</h2>
-                        <p>iOS mobile app for looking at pictures of your girlfriend</p>
-                        <div class="flex flex-row gap-2 my-2">
-                            <span class="badge badge-soft badge-info shadow-lg">Swift</span>
-                            <span class="badge badge-soft badge-info shadow-lg">SwiftUI</span>
-                        </div>
-                        <div class="card-actions justify-end">
-                            <label for="onlygf_modal" class="btn btn-info">Explore OnlyGF</label>
-                        </div>
-                    </div>
-                </div>
-                <div class="card bg-base-100 card-lg sm:w-256 md:w-256 lg:w-128 shadow-lg">
-                    <figure>
-                        <img src="./assets/screen/rpgmini_screen.png" alt="RPG-Mini"/>
-                    </figure>
-                    <div class="card-body">
-                        <h2 class="card-title text-info text-2xl">RPG-Mini</h2>
-                        <p>End-to-end backend API framework designed for tax accounting automation</p>
-                        <div class="flex flex-row gap-2 my-2">
-                            <span class="badge badge-soft badge-info shadow-lg">Python</span>
-                            <span class="badge badge-soft badge-info shadow-lg">FastAPI</span>
-                            <span class="badge badge-soft badge-info shadow-lg">SQLModel</span>
-                        </div>
-                        <div class="card-actions justify-end">
-                            <label for="rpgmini_modal" class="btn btn-info">Explore RPG-Mini</label>
-                        </div>
-                    </div>
-                </div>
-                <div class="card bg-base-100 card-lg sm:w-256 md:w-256 lg:w-128 shadow-lg">
-                    <figure>
-                        <img src="./assets/screen/partcart_screen.png" alt="PartCart"/>
-                    </figure>
-                    <div class="card-body">
-                        <h2 class="card-title text-info text-2xl">PartCart</h2>
-                        <p>Web application for internal use at computer repair companies to manage the workflow of part requests and order logistics.</p>
-                        <div class="flex flex-row gap-2 my-2">
-                            <span class="badge badge-soft badge-info shadow-lg">Vue.js</span>
-                            <span class="badge badge-soft badge-info shadow-lg">Supabase</span>
-                            <span class="badge badge-soft badge-info shadow-lg">TailwindCSS</span>
-                        </div>
-                        <div class="card-actions justify-end">
-                            <label for="partcart_modal" class="btn btn-info">Explore PartCart</label>
-                        </div>
-                    </div>
-                </div>
-                
-                
-                
-                <div class="card bg-base-100 card-lg sm:w-256 md:w-256 lg:w-128 shadow-lg">
-                    <div class="skeleton w-full h-64"></div>
-                    <div class="card-body">
-                        <h2 class="card-title text-info text-2xl">Blackjack Game</h2>
-                        <p>Command-line-interface blackjack game in C++</p>
-                        <div class="flex flex-row gap-2 my-2">
-                            <span class="badge badge-soft badge-info shadow-lg">C++</span>
-                        </div>
-                        <div class="card-actions justify-end">
-                            <label for="blackjack_modal" class="btn btn-info">Explore Blackjack Game</label>
-                        </div>
-                    </div>
-                </div>
-                <div class="card bg-base-100 card-lg sm:w-256 md:w-256 lg:w-128 shadow-lg">
-                    <figure>
-                        <img src="./assets/screen/amicae_screen.jpg" alt="Amicae"/>
-                    </figure>
-                    <div class="card-body">
-                        <h2 class="card-title text-info text-2xl">Amicae</h2>
-                        <p>Mobile app designed to help students at Concordia University connect with potential study buddies, discover study spots, and stay updated on university events.</p>
-                        <div class="flex flex-row gap-2 my-2">
-                            <span class="badge badge-soft badge-info shadow-lg">Flutter</span>
-                            <span class="badge badge-soft badge-info shadow-lg">Firebase</span>
-                            <span class="badge badge-soft badge-info shadow-lg">Dart</span>
-                            <span class="badge badge-soft badge-info shadow-lg">Vertex AI</span>
-                        </div>
-                        <div class="card-actions justify-end">
-                            <label for="amicae_modal" class="btn btn-info">Explore Amicae</label>
-                        </div>
-                    </div>
-                </div>
-                <div class="card bg-base-100 card-lg sm:w-256 md:w-256 lg:w-128 shadow-lg">
-                    <figure>
-                        <img src="./assets/screen/gradd_screen.png" alt="Grad-D"/>
-                    </figure>
-                    <div class="card-body">
-                        <h2 class="card-title text-info text-2xl">West Carleton Grad System</h2>
-                        <p>Full-stack web application designed for the creation and management of slideshows for graduation ceremonies.</p>
-                        <div class="flex flex-row gap-2 my-2">
-                            <span class="badge badge-soft badge-info shadow-lg">HTML</span>
-                            <span class="badge badge-soft badge-info shadow-lg">CSS</span>
-                            <span class="badge badge-soft badge-info shadow-lg">JavaScript</span>
-                            <span class="badge badge-soft badge-info shadow-lg">PHP</span>
-                            <span class="badge badge-soft badge-info shadow-lg">SQL</span>
-                        </div>
-                        <div class="card-actions justify-end">
-                            <label for="gradd_modal" class="btn btn-info">Explore West Carleton Grad System</label>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
+
         
         <span id="experience"></span>
         <div class="mx-8">
@@ -300,129 +180,6 @@
         </footer> -->
 
         <!-- MODALS -->
-        <input type="checkbox" id="partcart_modal" class="modal-toggle"/>
-        <div class="modal" role="dialog">
-            <div class="modal-box max-w-7xl">
-                <div class="flex flex-col items-center gap-4">
-                    <img class="w-256" src="./assets/screen/partcart_screen.png" alt="Part Cart">
-                    <p class="text-3xl font-bold text-info">PartCart: Simplifying Repair Parts Logistics</p>
-                    <a href="https://github.com/nathan-au/part-cart" target="_blank">
-                        <button class="btn bg-black text-white border-black">
-                            <svg aria-label="GitHub" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="white" d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z"></path></svg>
-                            PartCart on GitHub
-                        </button>
-                    </a>
-
-                    <p>Check out the <a class="link link-secondary" href="https://github.com/nathan-au/part-cart/blob/main/README.md#demo-screenshots" target="_blank">README.md</a> for demo screenshots.</p>
-                </div>
-            </div>
-            <label class="modal-backdrop" for="partcart_modal">Close</label>
-        </div>
-
-        <input type="checkbox" id="amicae_modal" class="modal-toggle"/>
-        <div class="modal" role="dialog">
-            <div class="modal-box max-w-7xl">
-                <div class="flex flex-col items-center gap-4">
-                    <img class="w-256" src="./assets/screen/amicae_screen.jpg" alt="Amicae">
-                    <p class="text-3xl font-bold text-info">Amicae: Your Campus Connection Companion</p>
-                    <a href="https://github.com/nathan-au/amicae" target="_blank">
-                        <button class="btn bg-black text-white border-black">
-                            <svg aria-label="GitHub" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="white" d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z"></path></svg>
-                            Amicae on GitHub
-                        </button>
-                    </a>
-                    <p>Check out the <a class="link link-secondary" href="https://github.com/nathan-au/amicae/blob/main/README.md#demo-screenshots" target="_blank">README.md</a> for demo screenshots.</p>
-                </div>
-            </div>
-            <label class="modal-backdrop" for="amicae_modal">Close</label>
-        </div>
-
-        <input type="checkbox" id="gradd_modal" class="modal-toggle"/>
-        <div class="modal" role="dialog">
-            <div class="modal-box max-w-7xl">
-                <div class="flex flex-col items-center gap-4">
-                    <img class="w-256" src="./assets/screen/gradd_screen.png" alt="Grad-D">
-                    <p class="text-3xl font-bold text-info">West Carleton Grad System: Graduation Slideshow Management</p>
-                    <a href="https://github.com/nathan-au/grad-d" target="_blank">
-                        <button class="btn bg-black text-white border-black">
-                            <svg aria-label="GitHub" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="white" d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z"></path></svg>
-                            West Carleton Grad System on GitHub
-                        </button>
-                    </a>
-                    <p>Check out the <a class="link link-secondary" href="https://github.com/nathan-au/grad-d/blob/main/README.md#demo-screenshots" target="_blank">README.md</a> for demo screenshots.</p>
-                </div>
-            </div>
-            <label class="modal-backdrop" for="gradd_modal">Close</label>
-        </div>
-
-        <input type="checkbox" id="onlygf_modal" class="modal-toggle"/>
-        <div class="modal" role="dialog">
-            <div class="modal-box max-w-7xl">
-                <div class="flex flex-col items-center gap-4">
-                    <div class="skeleton w-256 h-128"></div>
-                    <p class="text-3xl font-bold text-info">OnlyGF: I'm Obsessed With My Girlfriend</p>
-                    <a href="https://github.com/nathan-au/only-gf" target="_blank">
-                        <button class="btn bg-black text-white border-black">
-                            <svg aria-label="GitHub" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="white" d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z"></path></svg>
-                            OnlyGF on GitHub
-                        </button>
-                    </a>
-                </div>
-            </div>
-            <label class="modal-backdrop" for="onlygf_modal">Close</label>
-        </div>
-
-        <input type="checkbox" id="blackjack_modal" class="modal-toggle"/>
-        <div class="modal" role="dialog">
-            <div class="modal-box max-w-7xl">
-                <div class="flex flex-col items-center gap-4">
-                    <div class="skeleton w-256 h-128"></div>
-                    <p class="text-3xl font-bold text-info">Blackjack Game: Let's Go Gambling!</p>
-                    <a href="https://github.com/nathan-au/blackjack-game" target="_blank">
-                        <button class="btn bg-black text-white border-black">
-                            <svg aria-label="GitHub" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="white" d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z"></path></svg>
-                            Blackjack Game on GitHub
-                        </button>
-                    </a>
-                </div>
-            </div>
-            <label class="modal-backdrop" for="blackjack_modal">Close</label>
-        </div>
-
-        <input type="checkbox" id="macrossover_modal" class="modal-toggle"/>
-        <div class="modal" role="dialog">
-            <div class="modal-box max-w-7xl">
-                <div class="flex flex-col items-center gap-4">
-                    <img class="w-256" src="./assets/screen/macrossover_screen.png" alt="Macro">
-                    <p class="text-3xl font-bold text-info">MA Crossover Trading Model: An Intro to Algorithmic Trading</p>
-                    <a href="https://github.com/nathan-au/ma-crossover" target="_blank">
-                        <button class="btn bg-black text-white border-black">
-                            <svg aria-label="GitHub" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="white" d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z"></path></svg>
-                            MA Crossover Trading Model on GitHub
-                        </button>
-                    </a>
-                </div>
-            </div>
-            <label class="modal-backdrop" for="macrossover_modal">Close</label>
-        </div>
-
-        <input type="checkbox" id="rpgmini_modal" class="modal-toggle"/>
-        <div class="modal" role="dialog">
-            <div class="modal-box max-w-7xl">
-                <div class="flex flex-col items-center gap-4">
-                    <img class="w-256" src="./assets/screen/rpgmini_screen.png" alt="RPG-Mini">
-                    <p class="text-3xl font-bold text-info">RPG-Mini: AI-Powered Tax Accounting Automation</p>
-                    <a href="https://github.com/nathan-au/rpg-mini" target="_blank">
-                        <button class="btn bg-black text-white border-black">
-                            <svg aria-label="GitHub" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="white" d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z"></path></svg>
-                            RPG-Mini on GitHub
-                        </button>
-                    </a>
-                </div>
-            </div>
-            <label class="modal-backdrop" for="rpgmini_modal">Close</label>
-        </div>
-
 
 
     </body>
