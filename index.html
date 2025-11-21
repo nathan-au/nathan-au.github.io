@@ -33,125 +33,41 @@
                 <h2 class="text-4xl text-white">Software Engineering Student</h2>
                 <h3 class="text-3xl text-white">Montreal, Canada</h3>
                 <div class="flex flex-row gap-4">
-                    <a href="https://www.linkedin.com/in/-nathanau/" target="_blank">
-                        <img class="w-16 hover:scale-110 transition-transform duration-250 shadow-lg" src="./assets/logos/linkedin_logo.png" alt="LinkedIn">
-                    </a>
-                    <a href="https://www.github.com/nathan-au" target="_blank">
-                        <img class="w-16 hover:scale-110 transition-transform duration-250 shadow-lg rounded-full" src="./assets/logos/github_logo.png" alt="GitHub">
-                    </a>
+                    <a href="https://www.linkedin.com/in/-nathanau/" target="_blank"><img class="w-16 hover:scale-110 transition-transform duration-250 shadow-lg" src="./assets/logos/linkedin_logo.png" alt="LinkedIn"></a>
+                    <a href="https://www.github.com/nathan-au" target="_blank"><img class="w-16 hover:scale-110 transition-transform duration-250 shadow-lg rounded-full" src="./assets/logos/github_logo.png" alt="GitHub"></a>
                 </div>
 
-                <div class="flex flex-row gap-4 mt-16">
-                    <a href="#projects">
-                        <button class="btn btn-outline btn-lg">Projects</button>
-                    </a>
-                    <a href="#experience">
-                        <button class="btn btn-outline btn-lg">Experience</button>
-                    </a>
-                    <a href="#education">
-                        <button class="btn btn-outline btn-lg">Education</button>
-                    </a>
+                <div class="flex flex-row gap-4 mt-16 flex-wrap">
+                    <a href="#projects"><button class="btn btn-outline btn-lg">Projects</button></a>
+                    <a href="#experience"><button class="btn btn-outline btn-lg">Experience</button></a>
+                    <a href="#education"><button class="btn btn-outline btn-lg">Education</button></a>
+                    <a href="#skills"><button class="btn btn-outline btn-lg">Technical Skills</button></a>
                 </div>
 
             </div>
         </div>
 
-        <span id="projects"></span>
         <div class="mx-8">
-            <h1 class="text-7xl font-bold text-center my-16 text-white">Projects</h1>
+            <span id="projects"></span>
+            <h1 class="text-7xl font-bold text-center py-16 text-white">Projects</h1>
             <div id="project-cards-container" class="flex flex-wrap gap-4 justify-center"></div>
             <div id="project-modals-container"></div>
             <script src="projects.js"></script> 
-        </div>
 
-        <span id="experience"></span>
-        <div class="mx-8">
-            <h1 class="text-7xl font-bold text-center my-16 text-white">Experience</h1>
-            <div class="flex flex-row gap-4 flex-wrap justify-center">
+            <span id="experience"></span>
+            <h1 class="text-7xl font-bold text-center py-16 text-white">Experience</h1>
+            <div id="experience-container" class="flex flex-row gap-4 flex-wrap justify-center"></div>
+            <script src="experience.js"></script>
 
-                <div class="card bg-base-100 card-lg w-256 shadow-lg">
-                    <div class="card-body">
-                        <div class="flex justify-center mb-2">
-                            <img class="w-32 shadow-lg" src="./assets/logos/gdgoc_logo.png" alt="GDGoC"/>
-                        </div>
-                        <h2 class="card-title text-info text-2xl">Mobile Developer @ GDGoC Concordia</h2>
-                        <ul class="list-disc list-inside">
-                            <li>Built Amicae, a cross-platform Flutter app that helps university students make connections, find study spots, and stay updated on campus events.</li>
-                            <li>Earned recognition at the project showcase for: Best UI/UX, Best Presentation, and 2nd Place Overall</li>
-                            <li>Worked with 4 other developers to complete the project goals.</li>
-                        </ul>
-                        <div class="flex flex-row gap-2 my-2">
-                            <span class="badge badge-soft badge-info shadow-lg">Nov 2024 - Apr 2025</span>
-                            <span class="badge badge-soft badge-info shadow-lg">Hybrid / Montreal, QC</span>
-                        </div>
-                    </div>
-                </div>
+            <span id="education"></span>
+            <h1 class="text-7xl font-bold text-center py-16 text-white">Education</h1>
+            <div id="education-container" class="flex flex-row gap-4 flex-wrap justify-center"></div>
+            <script src="education.js"></script>
 
-                <div class="card bg-base-100 card-lg w-256 shadow-lg">
-                    <div class="card-body">
-                        <div class="flex justify-center mb-2">
-                            <img class="w-32 shadow-lg" src="./assets/logos/renaissance_logo.jpg" alt="Renaissance"/>
-                        </div>
-                        <h2 class="card-title text-info text-2xl">Engineering Intern @ Renaissance Network Reinvent</h2>
-                        <ul class="list-disc list-inside">
-                            <li>Designed and implemented functionality tests for computer systems and network hardware.</li>
-                            <li>Worked across various teams to debug and resolve performance issues.</li>
-                            <li>Optimized inventory tracking and data management systems for import/export logistics.</li>
-                        </ul> 
-                        <div class="flex flex-row gap-2 my-2">
-                            <span class="badge badge-soft badge-info shadow-lg">Sep 2023 - Feb 2024</span>
-                            <span class="badge badge-soft badge-info shadow-lg">Ottawa, ON</span>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-        <span id="education"></span>
-        <div class="mx-8">
-            <h1 class="text-7xl font-bold text-center my-16 text-white">Education</h1>
-            <div class="flex flex-row gap-4 flex-wrap justify-center">
-
-                <div class="card bg-base-100 card-lg w-256 shadow-lg">
-                    <div class="card-body">
-                        <div class="flex justify-center mb-2">
-                            <img class="w-32 shadow-lg rounded-full" src="./assets/logos/concordia_logo.png" alt="Concordia"/>
-                        </div>
-                        <h2 class="card-title text-info text-2xl">Software Engineering @ Concordia University</h2>
-                        <ul class="list-disc list-inside">
-                            <li>Bachelor of Engineering (B.Eng.), Co-op</li>
-                            <li>GPA: 3.3/4.0</li>
-                            <li>Clubs: Google Developer Group on Campus Concordia University (GDGoC Concordia), Software Engineering and Computer Science Society (SCS), Quantitative Research and Competitions Club (QUARCC)</li>
-                            <li>Relevant Coursework: Object-Oriented Programming I, Professional Practice and Responsibility, Mathematics for Computer Science</li>
-                        </ul>
-                        <div class="flex flex-row gap-2 my-2">
-                            <span class="badge badge-soft badge-info shadow-lg">Sep 2024 - 2029 (expected)</span>
-                            <span class="badge badge-soft badge-info shadow-lg">Montreal, QC</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card bg-base-100 card-lg w-256 shadow-lg">
-                    <div class="card-body">
-                        <div class="flex justify-center mb-2">
-                            <img class="w-32 shadow-lg" src="./assets/logos/wcss_logo.png" alt="WCSS"/>
-                        </div>
-                        <h2 class="card-title text-info text-2xl">OSSD @ West Carleton Secondary School</h2>
-                        <ul class="list-disc list-inside">
-                            <li>Ontario Secondary School Diploma (OSSD), Information and Communications Technology Specialist High Skills Major (ICT SHSM), French Immersion Certificate (CECR DELF B2), Ontario Scholar Award, Honour Roll, Co-op</li>
-                            <li>GPA: 3.6/4.0</li>
-                            <li>Clubs: Boys Varsity Lacrosse Team, Link Crew, Chess Club</li>
-                            <li>Relevant Coursework: Computer Science (12), Computer Engineering Technology (11/12), Introduction to Computer Science (11), Computer Technology and the Skilled Trades (10)</li>
-                        </ul> 
-                        <div class="flex flex-row gap-2 my-2">
-                            <span class="badge badge-soft badge-info shadow-lg">Sep 2020 - June 2024 </span>
-                            <span class="badge badge-soft badge-info shadow-lg">Ottawa, ON</span>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
+            <span id="skills"></span>
+            <h1 class="text-7xl font-bold text-center py-16 text-white">Technical Skills</h1>
+            <div id="skills-container" class="flex flex-wrap gap-4 justify-center"></div>
+            <script src="skills.js"></script>
         </div>
 
         <div class="hidden lg:flex fab">
@@ -159,9 +75,10 @@
             <div class="fab-main-action">
                 Back to Top <a href="#top" class="btn btn-circle btn-lg btn-outline">^</a>
             </div>
-            <div>Education <a href="#education" class="btn btn-lg btn-circle btn-outline">@</a></div>
-            <div>Experience <a href="#experience" class="btn btn-lg btn-circle btn-outline">$</a></div>
-            <div>Projects <a href="#projects" class="btn btn-lg btn-circle btn-outline">{ }</a></div>
+            <div>Technical Skills<a href="#skills" class="btn btn-lg btn-circle btn-outline">!</a></div>
+            <div>Education<a href="#education" class="btn btn-lg btn-circle btn-outline">@</a></div>
+            <div>Experience<a href="#experience" class="btn btn-lg btn-circle btn-outline">$</a></div>
+            <div>Projects<a href="#projects" class="btn btn-lg btn-circle btn-outline">{ }</a></div>
         </div>
 
        <div class="mt-64 flex justify-center p-4"> 
