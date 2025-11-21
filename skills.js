@@ -18,7 +18,6 @@ const skillCategories = [
             "SwiftUI",
             "Dart",
             "Flutter",
-
         ]
     },
     {
@@ -34,6 +33,7 @@ const skillCategories = [
             "PyMuPDF",
             "Matplotlib",
             "jQuery",
+            "Bootstrap"
         ]
     },
     {
@@ -46,7 +46,6 @@ const skillCategories = [
             "MySQL",
             "Firebase",
             "Supabase",
-
         ]
     },
     {
