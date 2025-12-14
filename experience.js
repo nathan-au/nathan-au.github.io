@@ -1,28 +1,30 @@
 const experiences = [
     {
-        role: "Mobile Developer",
-        organization: "GDGoC Concordia",
+        role: "Mobile Application Developer",
+        organization: "Google Developer Group on Campus Concordia University",
         details: [
-            "Built Amicae, a cross-platform Flutter app that helps university students make connections, find study spots, and stay updated on campus events.",
-            "Earned recognition at the project showcase for: Best UI/UX, Best Presentation, and 2nd Place Overall",
-            "Worked with 4 other developers to complete the project goals."
+            "Earned team recognition for Best UI/UX, Best Presentation, and 2nd Place Winning Team.",
+            "Collaborated in a 4-person team to plan, design, and develop Amicae: an app connecting students with peers, study spots, and events (see Projects).",
+            "Applied Agile methodology through 2-week Scrum sprints to prioritize high-impact tasks, develop features iteratively, and incorporate user feedback.",
+            "Pitched the app at Flutter Montr&eacute;al and Concordia University to 100+ people and produced the official launch video to highlight core functionality."
         ],
-        start_date: "Nov 2024",
-        end_date: "Apr 2025",
-        location: "Hybrid / Montreal, QC, Canada",
+        start_date: "Nov. 2024",
+        end_date: "Apr. 2025",
+        location: "Hybrid / Montr&eacute;al, QC",
         logo_path: "./assets/logos/gdgoc_logo.png"
     },
     {
-        role: "Engineering Intern",
+        role: "Engineering Intern - Hardware & Electronics",
         organization: "Renaissance Network Reinvent",
         details: [
-            "Designed and implemented functionality tests for computer systems and network hardware.",
-            "Worked across various teams to debug and resolve performance issues.",
-            "Optimized inventory tracking and data management systems for import/export logistics."
+            "Engaged in the full product repair cycle: testing -> debugging -> repair -> assembly -> quality control, while adhering to ESD safety protocols",
+            "Debugged and repaired 200+ units (e.g., circuit boards, server fans, power supplies) using electronic test instruments and component-level soldering techniques.",
+            "Reduced material costs by salvaging 75+ microchips and various electronic components from unrepairable circuit boards.",
+            "Tracked inventory of 1,000+ repair components using barcode-enabled data capture and Excel-driven tracking."
         ],
-        start_date: "Sep 2023",
-        end_date: "Feb 2024",
-        location: "Ottawa, ON, Canada",
+        start_date: "Sep. 2023",
+        end_date: "Feb. 2024",
+        location: "Ottawa, ON",
         logo_path: "./assets/logos/renaissance_logo.jpg"
 
     },

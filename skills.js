@@ -6,75 +6,40 @@ const skillCategories = [
             "HTML",
             "CSS",
             "JavaScript",
-            "PHP",
+            "SQL",
             "C++",
-            "Java",
-        ]
-    },
-    {
-        category: "Mobile",
-        skills: [
-            "Swift",
-            "SwiftUI",
             "Dart",
-            "Flutter",
         ]
     },
     {
         category: "Libraries + Frameworks",
         skills: [
-            "Pandas",
-            "NumPy",
+            "Flutter",
             "Vue.js",
+            "Pandas",
             "FastAPI",
             "TailwindCSS",
-            "Playwright",
-            "Pytesseract",
-            "PyMuPDF",
             "Matplotlib",
-            "jQuery",
-            "Bootstrap"
-        ]
-    },
-    {
-        category: "Database",
-        skills: [
             "SQLModel",
             "SQLite",
-            "Pydantic",
-            "SQL",
-            "MySQL",
-            "Firebase",
-            "Supabase",
-        ]
-    },
-    {
-        category: "AI + ML",
-        skills: [
-            "Vertex AI",
-            "FinBERT",
-            "Ollama",
-        ]
-    },
-    {
-        category: "API",
-        skills: [
-            "Reddit JSON API",
-            "yfinance",
-            "Google OAuth API",
-            "Concordia University API"
+            "Pytest"
         ]
     },
     {
         category: "Tools",
         skills: [
             "Git + GitHub",
-            "SolidWorks",
+            "Ollama",
+            "Firebase",
+            "Supabase",
+            "Vertex AI",
+            "LaTeX",
+            "Arduino",
             "KiCad",
-            "Arduino"
+            "SolidWorks",
         ]
     },
-];
+]
 
 const skillsContainer = document.getElementById('skills-container')
 

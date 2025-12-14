@@ -1,5 +1,13 @@
 const projects = [
     {
+        name: "Reel Digest",
+        image_path: "./assets/screens/reeldigest_screen.png",
+        description: "Productivity tool for converting short form content into text summaries.",
+        tech_stack: ["Python", "Ollama", "SQLite", "Telegram Bot API", "yt-dlp", "SpeechRecognition"],
+        modal_id: "reeldigest_modal",
+        git_repo: "https://github.com/nathan-au/reel-digest"
+    },
+    {
         name: "Instagram Opps v3",
         image_path: "./assets/screens/instagramoppsv3_screen.png",
         description: "Script for detecting your Instagram opps (people you follow that don't follow you back)",
@@ -11,7 +19,7 @@ const projects = [
         name: "WSB-BERT",
         image_path: "./assets/screens/wsbbert_screen.png",
         description: "NLP sentiment analysis for the craziest online trading community: r/WallStreetBets",
-        tech_stack: ["Python", "FinBERT", "Reddit JSON API", "Ollama"],
+        tech_stack: ["Python", "FinBERT", "Reddit JSON API", "Ollama", "Hugging Face Transformers"],
         modal_id: "wsbbert_modal",
         git_repo: "https://github.com/nathan-au/wsb-bert"
     },
@@ -19,7 +27,7 @@ const projects = [
         name: "MA Crossover Trading Model",
         image_path: "./assets/screens/macrossover_screen.png",
         description: "Algorithmic trading model that implements the moving average crossover strategy",
-        tech_stack: ["Python", "yfinance", "Pandas", "NumPy", "Matplotlib"],
+        tech_stack: ["Python", "yfinance", "Pandas", "Matplotlib"],
         modal_id: "macrossover_modal",
         git_repo: "https://github.com/nathan-au/ma-crossover"
     },
@@ -27,7 +35,7 @@ const projects = [
         name: "RPG-Mini",
         image_path: "./assets/screens/rpgmini_screen.png",
         description: "End-to-end API framework for tax accounting automation.",
-        tech_stack: ["Python", "SQLModel", "SQLite", "Pydantic", "Ollama", "Pytesseract", "FastAPI", "PyMuPDF"],
+        tech_stack: ["Python", "SQLModel", "SQLite", "Ollama", "Pytesseract", "FastAPI", "Pytest"],
         modal_id: "rpgmini_modal",
         git_repo: "https://github.com/nathan-au/rpg-mini"
     },
@@ -43,7 +51,7 @@ const projects = [
         name: "Amicae",
         image_path: "./assets/screens/amicae_screen.jpg",
         description: "Cross-platform mobile app for social and academic networking at Concordia University.",
-        tech_stack: ["Flutter", "Firebase", "Dart", "Vertex AI", "Concordia University API"],
+        tech_stack: ["Flutter", "Firebase", "Dart", "Vertex AI", "Concordia Open Data API", "flutter_map"],
         modal_id: "amicae_modal",
         git_repo: "https://github.com/nathan-au/amicae"
     },
@@ -51,7 +59,7 @@ const projects = [
         name: "West Carleton Grad System",
         image_path: "./assets/screens/gradd_screen.png",
         description: "Full-stack web app for creating and managing slideshows for graduation ceremonies.",
-        tech_stack: ["HTML", "CSS", "Bootstrap", "JavaScript", "PHP", "SQL", "MySQL", "Google OAuth API", "jQuery"],
+        tech_stack: ["HTML", "CSS", "Bootstrap", "JavaScript", "PHP", "SQL", "MySQL", "Google OAuth API", "jQuery", "TinyMCE"],
         modal_id: "gradd_modal",
         git_repo: "https://github.com/nathan-au/grad-d"
     }

@@ -3,7 +3,7 @@ const educations = [
         degree: "Software Engineering",
         school: "Concordia University",
         details: [
-            "Bachelor of Engineering (B.Eng)",
+            "Bachelor of Engineering",
             "Co-op"
         ],
         gpa: "3.3/4.0",
@@ -17,9 +17,9 @@ const educations = [
             "Professional Practice and Responsibility",
             "Mathematics for Computer Science"
         ],
-        start_date: "Sep 2024",
-        end_date: "2025 (expected)",
-        location: "Montreal, QC, Canada",
+        start_date: "2024",
+        end_date: "2028 (expected)",
+        location: "Montr&eacute;al, QC",
         logo_path: "./assets/logos/concordia_logo.png"
     },
     {
@@ -31,7 +31,6 @@ const educations = [
             "Co-op",
             "Ontario Scholar Award",
             "Honour Roll"
-
         ],
         gpa: "3.6/4.0",
         clubs: [
@@ -41,13 +40,13 @@ const educations = [
         ],
         relevant_courses: [
             "Computer Science (12)",
-            "Computer Engineering Technology (11 + 12)",
+            "Computer Engineering Technology (11 & 12)",
             "Introduction to Computer Science (11)",
             "Computer Technology and the Skilled Trades (10)"
         ],
-        start_date: "Sep 2020",
-        end_date: "June 2024",
-        location: "Ottawa, ON, Canada",
+        start_date: "2020",
+        end_date: "2024",
+        location: "Ottawa, ON",
         logo_path: "./assets/logos/wcss_logo.png"
     },
 
