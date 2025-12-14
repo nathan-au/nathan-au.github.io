@@ -20,7 +20,7 @@ const experiences = [
             "Engaged in the full product repair cycle: testing -> debugging -> repair -> assembly -> quality control, while adhering to ESD safety protocols",
             "Debugged and repaired 200+ units (e.g., circuit boards, server fans, power supplies) using electronic test instruments and component-level soldering techniques.",
             "Reduced material costs by salvaging 75+ microchips and various electronic components from unrepairable circuit boards.",
-            "Audited inventory of 1,000+ repair components using barcode-enabled data capture and Excel-driven tracking."
+            "Managed inventory of 1,000+ repair components using barcode-enabled data capture and Excel-driven tracking."
         ],
         start_date: "Sep. 2023",
         end_date: "Feb. 2024",
