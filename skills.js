@@ -22,7 +22,7 @@ const skillCategories = [
             "Matplotlib",
             "SQLModel",
             "SQLite",
-            "Pytest"
+            "pytest"
         ]
     },
     {

@@ -35,7 +35,7 @@ const projects = [
         name: "RPG-Mini",
         image_path: "./assets/screens/rpgmini_screen.png",
         description: "End-to-end API framework for tax accounting automation.",
-        tech_stack: ["Python", "SQLModel", "SQLite", "Ollama", "Pytesseract", "FastAPI", "Pytest"],
+        tech_stack: ["Python", "SQLModel", "SQLite", "Ollama", "Pytesseract", "FastAPI", "pytest"],
         modal_id: "rpgmini_modal",
         git_repo: "https://github.com/nathan-au/rpg-mini"
     },
