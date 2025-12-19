@@ -11,13 +11,13 @@ const experiences = [
         start_date: "Nov. 2024",
         end_date: "Apr. 2025",
         location: "Hybrid / Montr&eacute;al, QC",
-        logo_path: "./assets/logos/gdgoc_logo.png"
+        logo_path: "./assets/icons/gdgoc_logo.png"
     },
     {
         role: "Engineering Intern - Hardware & Electronics",
         organization: "Renaissance Network Reinvent",
         details: [
-            "Engaged in the full product repair cycle: testing -> debugging -> repair -> assembly -> quality control, while adhering to ESD safety protocols",
+            "Engaged in the full product repair cycle: testing, debugging, repair, assembly, quality control, while adhering to ESD safety protocols",
             "Debugged and repaired 200+ units (e.g., circuit boards, server fans, power supplies) using electronic test instruments and component-level soldering techniques.",
             "Reduced material costs by salvaging 75+ microchips and various electronic components from unrepairable circuit boards.",
             "Managed inventory of 1,000+ repair components using barcode-enabled data capture and Excel-driven tracking."
@@ -25,7 +25,7 @@ const experiences = [
         start_date: "Sep. 2023",
         end_date: "Feb. 2024",
         location: "Ottawa, ON",
-        logo_path: "./assets/logos/renaissance_logo.jpg"
+        logo_path: "./assets/icons/renaissance_logo.jpg"
 
     },
 ]

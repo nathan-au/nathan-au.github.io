@@ -6,7 +6,7 @@ const educations = [
             "Bachelor of Engineering",
             "Co-op"
         ],
-        gpa: "3.3/4.0",
+        gpa: "3.4/4.0",
         clubs: [
             "Google Developer Group on Campus Concordia University (GDGoC Concordia)",
             "Software Engineering and Computer Science Society (SCS)",
@@ -20,7 +20,7 @@ const educations = [
         start_date: "2024",
         end_date: "2028 (expected)",
         location: "Montr&eacute;al, QC",
-        logo_path: "./assets/logos/concordia_logo.png"
+        logo_path: "./assets/icons/concordia_logo.png"
     },
     {
         degree: "Ontario Secondary School Diploma",
@@ -47,7 +47,7 @@ const educations = [
         start_date: "2020",
         end_date: "2024",
         location: "Ottawa, ON",
-        logo_path: "./assets/logos/wcss_logo.png"
+        logo_path: "./assets/icons/wcss_logo.png"
     },
 
 ]
