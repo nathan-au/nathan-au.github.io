@@ -61,13 +61,13 @@ educations.forEach(education => {
     let relevantCoursesString = education.relevant_courses.join(", ")
 
     const educationCard = document.createElement("div")
-    educationCard.className = "card bg-base-100 card-lg w-256 shadow-lg"
+    educationCard.className = "card bg-base-100 w-128 shadow-lg"
     educationCard.innerHTML = `
         <div class="card-body">
             <div class="flex justify-center mb-2">
                 <img class="w-32 shadow-lg" src="${education.logo_path}" alt="${education.school}"/>
             </div>
-            <h2 class="card-title text-info text-2xl">${education.degree} @ ${education.school}</h2>
+            <h2 class="card-title text-info">${education.degree} @ ${education.school}</h2>
             <ul class="list-disc list-inside">
                 <li>${detailsString}</li>
                 <li>GPA: ${education.gpa}</li>

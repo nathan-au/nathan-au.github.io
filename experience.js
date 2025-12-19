@@ -40,13 +40,13 @@ experiences.forEach(experience => {
     })
 
     const experienceCard = document.createElement("div")
-    experienceCard.className = "card bg-base-100 card-lg w-256 shadow-lg"
+    experienceCard.className = "card bg-base-100 w-128 shadow-lg"
     experienceCard.innerHTML = `
         <div class="card-body">
             <div class="flex justify-center mb-2">
                 <img class="w-32 shadow-lg" src="${experience.logo_path}" alt="${experience.organization}"/>
             </div>
-            <h2 class="card-title text-info text-2xl">${experience.role} @ ${experience.organization}</h2>
+            <h2 class="card-title text-info">${experience.role} @ ${experience.organization}</h2>
             <ul class="list-disc list-inside">
                 ${detailsHTML}
             </ul> 

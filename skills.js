@@ -48,14 +48,14 @@ skillCategories.forEach(skillCategory => {
     let skillsHTML = ""
     skillCategory.skills.sort()
     skillCategory.skills.forEach(skill => {
-        skillsHTML += "<div class=\"kbd kbd-xl\">" + skill + "</div>"
+        skillsHTML += "<div class=\"kbd\">" + skill + "</div>"
     })
 
     const skillCategorySection = document.createElement("div")
-    skillCategorySection.className = "card bg-base-100 card-lg sm:w-256 md:w-128 lg:w-128 shadow-lg"
+    skillCategorySection.className = "card bg-base-100 w-128 shadow-lg"
     skillCategorySection.innerHTML = `
         <div class="card-body">
-            <h2 class="card-title text-info text-2xl">${skillCategory.category}</h2>
+            <h2 class="card-title text-info">${skillCategory.category}</h2>
             <div class="flex flex-row gap-2 my-2 flex-wrap">
                 ${skillsHTML}
             </div>

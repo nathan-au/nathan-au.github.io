@@ -72,12 +72,7 @@ const githubLogoSVG = "<svg aria-label=\"GitHub\" width=\"16\" height=\"16\" xml
 projects.forEach(project => {
 
     let imageHTML = ""
-    if (project.image_path == "") {
-        imageHTML = "<div class=\"skeleton w-full h-64\"></div>"
-    }
-    else {
-        imageHTML = "<figure><img src=\"" + project.image_path + "\" alt=\"" + project.name + "\"></figure>"
-    }
+    imageHTML = "<figure><img class=\"h-64\" src=\"" + project.image_path + "\" alt=\"" + project.name + "\"></figure>"
 
     let techStackHTML = ""
     project.tech_stack.sort()
@@ -86,42 +81,49 @@ projects.forEach(project => {
     })
     
     const projectCard = document.createElement("div")
-    projectCard.className = "card bg-base-100 card-lg sm:w-256 md:w-128 lg:w-128 shadow-lg"
+    projectCard.className = "card bg-base-100 w-128 shadow-lg"
     projectCard.innerHTML = `
+    
         ${imageHTML}
         <div class="card-body">
-            <h2 class="card-title text-info text-2xl">${project.name}</h2>
+            <h2 class="card-title text-info">${project.name}</h2>
             <p>${project.description}</p>
             <div class="flex flex-row gap-2 my-2 flex-wrap">
                 ${techStackHTML}
             </div>
             <div class="card-actions justify-end">
-                <label for="${project.modal_id}" class="btn btn-info">Explore ${project.name}</label>
+                <a href="${project.git_repo}" target="_blank">
+                    <button class="btn bg-black text-white">
+                        ${githubLogoSVG}
+                        ${project.name} on GitHub
+                    </button>
+                </a>
+                <!-- <label for="${project.modal_id}" class="btn btn-info">Explore ${project.name}</label> -->
             </div>
         </div>
     `
     projectCardsContainer.appendChild(projectCard)
 
-    const projectModal = document.createElement("div")
-    projectModal.innerHTML = `
-        <input type="checkbox" id="${project.modal_id}" class="modal-toggle"/>
-        <div class="modal" role="dialog">
-            <div class="modal-box max-w-7xl">
-                <div class="flex flex-col items-center gap-4">
-                    <img class="w-256" src="${project.image_path}" alt="${project.name}"/>
-                    <p class="text-3xl font-bold text-info">${project.name}</p>
-                    <a href="${project.git_repo}" target="_blank">
-                        <button class="btn bg-black text-white border-black">
-                            ${githubLogoSVG}
-                            ${project.name} on GitHub
-                        </button>
-                    </a>
-                    <!-- <p>Check out the <a class="link link-secondary" href="${project.git_repo}/blob/main/README.md#demo-screenshots" target="_blank">README.md</a> for demo screenshots.</p> -->
-                </div>
-            </div>
-            <label class="modal-backdrop" for="${project.modal_id}">Close</label>
-        </div>
-    `
-    projectModalsContainer.appendChild(projectModal)
+    // const projectModal = document.createElement("div")
+    // projectModal.innerHTML = `
+    //     <input type="checkbox" id="${project.modal_id}" class="modal-toggle"/>
+    //     <div class="modal" role="dialog">
+    //         <div class="modal-box max-w-7xl">
+    //             <div class="flex flex-col items-center gap-4">
+    //                 <img class="w-256" src="${project.image_path}" alt="${project.name}"/>
+    //                 <p class="text-3xl font-bold text-info">${project.name}</p>
+    //                 <a href="${project.git_repo}" target="_blank">
+    //                     <button class="btn bg-black text-white border-black">
+    //                         ${githubLogoSVG}
+    //                         ${project.name} on GitHub
+    //                     </button>
+    //                 </a>
+    //                 <!-- <p>Check out the <a class="link link-secondary" href="${project.git_repo}/blob/main/README.md#demo-screenshots" target="_blank">README.md</a> for demo screenshots.</p> -->
+    //             </div>
+    //         </div>
+    //         <label class="modal-backdrop" for="${project.modal_id}">Close</label>
+    //     </div>
+    // `
+    // projectModalsContainer.appendChild(projectModal)
 
 })
