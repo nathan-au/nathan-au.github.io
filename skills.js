@@ -12,7 +12,7 @@ const skillCategories = [
         ]
     },
     {
-        category: "Libraries + Frameworks",
+        category: "Libraries & Frameworks",
         skills: [
             "Flutter",
             "Vue.js",
@@ -28,7 +28,7 @@ const skillCategories = [
     {
         category: "Tools",
         skills: [
-            "Git + GitHub",
+            "Git & GitHub",
             "Ollama",
             "Firebase",
             "Supabase",

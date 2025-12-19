@@ -72,7 +72,7 @@ const githubLogoSVG = "<svg aria-label=\"GitHub\" width=\"16\" height=\"16\" xml
 projects.forEach(project => {
 
     let imageHTML = ""
-    imageHTML = "<figure><img class=\"h-64\" src=\"" + project.image_path + "\" alt=\"" + project.name + "\"></figure>"
+    imageHTML = "<figure><img class=\"w-full h-64 object-cover\" src=\"" + project.image_path + "\" alt=\"" + project.name + "\"></figure>"
 
     let techStackHTML = ""
     project.tech_stack.sort()
@@ -93,7 +93,7 @@ projects.forEach(project => {
             </div>
             <div class="card-actions justify-end">
                 <a href="${project.git_repo}" target="_blank">
-                    <button class="btn bg-black text-white">
+                    <button class="btn bg-black text-white hover:scale-105 transition-transform duration-128">
                         ${githubLogoSVG}
                         ${project.name} on GitHub
                     </button>
