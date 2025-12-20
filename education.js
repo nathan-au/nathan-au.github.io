@@ -74,9 +74,9 @@ educations.forEach(education => {
                 <li>Clubs: ${clubsString}</li>
                 <li>Relevant Courses: ${relevantCoursesString}</li>
             </ul> 
-            <div class="flex flex-row gap-2 my-2">
-                <span class="badge badge-soft badge-info shadow-lg">${education.start_date} - ${education.end_date}</span>
-                <span class="badge badge-soft badge-info shadow-lg">${education.location}</span>
+            <div class="flex flex-row gap-2 my-2 flex-wrap">
+                <span class="badge badge-soft badge-info shadow-lg text-nowrap">${education.start_date} - ${education.end_date}</span>
+                <span class="badge badge-soft badge-info shadow-lg text-nowrap">${education.location}</span>
             </div>
         </div>
     `

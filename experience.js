@@ -50,9 +50,9 @@ experiences.forEach(experience => {
             <ul class="list-disc list-inside">
                 ${detailsHTML}
             </ul> 
-            <div class="flex flex-row gap-2 my-2">
-                <span class="badge badge-soft badge-info shadow-lg">${experience.start_date} - ${experience.end_date}</span>
-                <span class="badge badge-soft badge-info shadow-lg">${experience.location}</span>
+            <div class="flex flex-row gap-2 my-2 flex-wrap">
+                <span class="badge badge-soft badge-info shadow-lg text-nowrap">${experience.start_date} - ${experience.end_date}</span>
+                <span class="badge badge-soft badge-info shadow-lg text-nowrap">${experience.location}</span>
             </div>
         </div>
     `
