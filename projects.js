@@ -10,7 +10,7 @@ const projects = [
     {
         name: "Instagram Opps v3",
         image_path: "./assets/screens/instagramoppsv3_screen.png",
-        description: "Script for detecting your Instagram opps (people you follow that don't follow you back)",
+        description: "Script for detecting your Instagram opps (people you follow that don't follow you back).",
         tech_stack: ["Python", "Playwright"],
         modal_id: "instagramoppsv3_modal",
         git_repo: "https://github.com/nathan-au/instagram-opps-v3"
@@ -18,7 +18,7 @@ const projects = [
     {
         name: "WSB-BERT",
         image_path: "./assets/screens/wsbbert_screen.png",
-        description: "NLP sentiment analysis for the craziest online trading community: r/WallStreetBets",
+        description: "NLP sentiment analysis for the craziest online trading community: r/WallStreetBets.",
         tech_stack: ["Python", "FinBERT", "Reddit JSON API", "Ollama", "Hugging Face Transformers"],
         modal_id: "wsbbert_modal",
         git_repo: "https://github.com/nathan-au/wsb-bert"
@@ -26,7 +26,7 @@ const projects = [
     {
         name: "MA Crossover Trading Model",
         image_path: "./assets/screens/macrossover_screen.png",
-        description: "Algorithmic trading model that implements the moving average crossover strategy",
+        description: "Algorithmic trading model that implements the moving average crossover strategy.",
         tech_stack: ["Python", "yfinance", "Pandas", "Matplotlib"],
         modal_id: "macrossover_modal",
         git_repo: "https://github.com/nathan-au/ma-crossover"
@@ -42,7 +42,7 @@ const projects = [
     {
         name: "PartCart",
         image_path: "./assets/screens/partcart_screen.png",
-        description: "Web app for managing part requests and order logistics at computer repair companies",
+        description: "Web app for managing part requests and order logistics at computer repair companies.",
         tech_stack: ["Vue.js", "Supabase", "TailwindCSS"],
         modal_id: "partcart_modal",
         git_repo: "https://github.com/nathan-au/part-cart"
@@ -72,30 +72,26 @@ const githubLogoSVG = "<svg aria-label=\"GitHub\" width=\"16\" height=\"16\" xml
 projects.forEach(project => {
 
     let imageHTML = ""
-    imageHTML = "<figure><img class=\"w-full h-64 object-cover\" src=\"" + project.image_path + "\" alt=\"" + project.name + "\"></figure>"
+    imageHTML = "<figure class=\"px-4 pt-4\"><img src=\"" + project.image_path + "\" alt=\"" + project.name + "\" class=\"w-full h-64 object-contain\"></figure>"
 
     let techStackHTML = ""
     project.tech_stack.sort()
     project.tech_stack.forEach(tech => {
-        techStackHTML += "<span class=\"badge badge-soft badge-info shadow-lg\">" + tech + "</span>"
+        techStackHTML += "<span class=\"badge badge-soft badge-info\">" + tech + "</span>"
     })
     
     const projectCard = document.createElement("div")
-    projectCard.className = "card bg-base-100 w-128 shadow-lg"
+    projectCard.className = "card bg-base-100 w-128"
     projectCard.innerHTML = `
-    
         ${imageHTML}
         <div class="card-body">
             <h2 class="card-title text-info">${project.name}</h2>
             <p>${project.description}</p>
-            <div class="flex flex-row gap-2 my-2 flex-wrap">
-                ${techStackHTML}
-            </div>
-            <div class="card-actions justify-end">
+            <div class="flex flex-row gap-2 my-2 flex-wrap">${techStackHTML}</div>
+            <div class="card-actions justify-center">
                 <a href="${project.git_repo}" target="_blank">
                     <button class="btn bg-black text-white hover:scale-105 transition-transform duration-128">
-                        ${githubLogoSVG}
-                        ${project.name} on GitHub
+                        ${githubLogoSVG}${project.name} on GitHub
                     </button>
                 </a>
                 <!-- <label for="${project.modal_id}" class="btn btn-info">Explore ${project.name}</label> -->
@@ -103,27 +99,5 @@ projects.forEach(project => {
         </div>
     `
     projectCardsContainer.appendChild(projectCard)
-
-    // const projectModal = document.createElement("div")
-    // projectModal.innerHTML = `
-    //     <input type="checkbox" id="${project.modal_id}" class="modal-toggle"/>
-    //     <div class="modal" role="dialog">
-    //         <div class="modal-box max-w-7xl">
-    //             <div class="flex flex-col items-center gap-4">
-    //                 <img class="w-256" src="${project.image_path}" alt="${project.name}"/>
-    //                 <p class="text-3xl font-bold text-info">${project.name}</p>
-    //                 <a href="${project.git_repo}" target="_blank">
-    //                     <button class="btn bg-black text-white border-black">
-    //                         ${githubLogoSVG}
-    //                         ${project.name} on GitHub
-    //                     </button>
-    //                 </a>
-    //                 <!-- <p>Check out the <a class="link link-secondary" href="${project.git_repo}/blob/main/README.md#demo-screenshots" target="_blank">README.md</a> for demo screenshots.</p> -->
-    //             </div>
-    //         </div>
-    //         <label class="modal-backdrop" for="${project.modal_id}">Close</label>
-    //     </div>
-    // `
-    // projectModalsContainer.appendChild(projectModal)
 
 })
