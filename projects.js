@@ -32,12 +32,12 @@ const projects = [
         git_repo: "https://github.com/nathan-au/ma-crossover"
     },
     {
-        name: "RPG-Mini",
-        image_path: "./assets/screens/rpgmini_screen.png",
+        name: "TeeFour AI",
+        image_path: "./assets/screens/teefourai_screen.png",
         description: "End-to-end API framework for tax accounting automation.",
         tech_stack: ["Python", "SQLModel", "SQLite", "Ollama", "Pytesseract", "FastAPI", "pytest"],
-        modal_id: "rpgmini_modal",
-        git_repo: "https://github.com/nathan-au/rpg-mini"
+        modal_id: "teefourai_modal",
+        git_repo: "https://github.com/nathan-au/teefour-ai"
     },
     {
         name: "PartCart",
