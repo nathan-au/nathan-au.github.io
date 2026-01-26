@@ -1,5 +1,13 @@
 const projects = [
     {
+        name: "FabricMatch API",
+        image_path: "./assets/screens/fabricmatchapi_screen.jpg",
+        description: "Computer vision API that extracts body and facial data for personalized style recommendations.",
+        tech_stack: ["Python, FastAPI, YOLO, DeepFace, OpenCV, Hugging Face Transformers, Gradio Client"],
+        modal_id: "fabricmatchapi_modal",
+        git_repo: "https://github.com/nathan-au/fabric-match-api"   
+    },
+    {
         name: "Scaffold",
         image_path: "./assets/screens/scaffold_screen.png",
         description: "Reward-based learning reinforcement platform that transforms kids' screen time into learning time.",
