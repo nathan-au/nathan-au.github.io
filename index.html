@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="scroll-smooth" data-theme="dracula">
+<html lang="en" class="scroll-smooth" data-theme="dracula">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,48 +7,91 @@
         <link rel="stylesheet" href="style.css">
         <link rel="icon" type="image/x-icon" href="./assets/chickengrass.png">
 
-        <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css"/>
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css">
         <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-        <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css"/>
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css">
+
+        <script type="importmap"> { "imports": { "three": "https://cdn.jsdelivr.net/npm/three@0.182.0/build/three.module.js" } } </script>
     </head>
 
     <body>
-        
-        <div class="hero min-h-screen">
-            <div class="hero-content flex flex-col">
 
-                <h1 class="text-8xl font-bold text-white">Nathan Au</h1>
-                <p class="text-4xl text-white">Software Engineering</p>
-                <p class="text-2xl text-white">Montr&eacute;al, Canada</p>
+        <script type="module">
+            import * as THREE from "three"
 
-                <div class="flex flex-row gap-10 justify-center mt-10">
-                    <a href="https://www.linkedin.com/in/-nathanau/" target="_blank">
-                        <img class="w-15 h-15 hover:scale-115 transition-transform duration-250" src="https://img.icons8.com/?size=100&id=446&format=png&color=ffffff" alt="LinkedIn">
-                    </a>
-                    <a href="https://www.github.com/nathan-au" target="_blank">
-                        <img class="w-15 h-15 hover:scale-115 transition-transform duration-250" src="https://img.icons8.com/?size=100&id=467&format=png&color=ffffff" alt="GitHub">
-                    </a>
-                    <a href="https://github.com/nathan-au/resume/blob/main/Nathan_Au_Resume.pdf" target="_blank">
-                        <img class="w-15 h-15 hover:scale-115 transition-transform duration-250" src="https://img.icons8.com/?size=100&id=6459&format=png&color=ffffff" alt="Resume">
-                    </a>
-                    <a href="mailto:im.nathanau@gmail.com" target="_blank">
-                        <img class="w-15 h-15 hover:scale-115 transition-transform duration-250" src="https://img.icons8.com/?size=100&id=492&format=png&color=ffffff" alt="Email">
-                    </a>
+            const scene = new THREE.Scene()
+            const camera = new THREE.PerspectiveCamera(
+                100,
+                window.innerWidth / window.innerHeight,
+                0.1,
+                1000
+            )
+
+            const renderer = new THREE.WebGLRenderer()
+            renderer.setSize(window.innerWidth, window.innerHeight)
+            document.body.appendChild(renderer.domElement)
+
+            const loader = new THREE.CubeTextureLoader()
+            const cubeTexture = await loader.loadAsync ([
+                "assets/panorama/panorama_1.png", //left
+                "assets/panorama/panorama_3.png", //right
+                "assets/panorama/panorama_4.png", //sky
+                "assets/panorama/panorama_5.png", //ground
+                "assets/panorama/panorama_0.png", //back
+                "assets/panorama/panorama_2.png" //front
+            ])
+            scene.background = cubeTexture;
+
+            function animate() {
+                renderer.render( scene, camera )
+                camera.rotation.y -= 0.001
+            }
+            renderer.setAnimationLoop( animate )
+
+            addEventListener("resize", () => (
+                camera.aspect = innerWidth / innerHeight,
+                camera.updateProjectionMatrix(),
+                renderer.setSize(innerWidth, innerHeight)
+            ));
+        </script>
+
+        <div class="relative z-1">
+            <div class="hero min-h-screen">
+                <div class="hero-content flex flex-col">
+
+                    <h1 class="text-8xl font-bold text-white">Nathan Au</h1>
+                    <p class="text-4xl text-white">Software Engineering</p>
+                    <p class="text-2xl text-white">Montr&eacute;al, Canada</p>
+
+                    <div class="flex flex-row gap-10 justify-center mt-10">
+                        <a href="https://www.linkedin.com/in/-nathanau/" target="_blank">
+                            <img class="w-15 h-15 hover:scale-115 transition-transform duration-200" src="https://img.icons8.com/?size=100&id=446&format=png&color=ffffff" alt="LinkedIn">
+                        </a>
+                        <a href="https://www.github.com/nathan-au" target="_blank">
+                            <img class="w-15 h-15 hover:scale-115 transition-transform duration-200" src="https://img.icons8.com/?size=100&id=467&format=png&color=ffffff" alt="GitHub">
+                        </a>
+                        <a href="https://github.com/nathan-au/resume/blob/main/Nathan_Au_Resume.pdf" target="_blank">
+                            <img class="w-15 h-15 hover:scale-115 transition-transform duration-200" src="https://img.icons8.com/?size=100&id=6459&format=png&color=ffffff" alt="Resume">
+                        </a>
+                        <a href="mailto:im.nathanau@gmail.com" target="_blank">
+                            <img class="w-15 h-15 hover:scale-115 transition-transform duration-200" src="https://img.icons8.com/?size=100&id=492&format=png&color=ffffff" alt="Email">
+                        </a>
+                    </div>
+
+                    <button onclick="document.getElementById('projects').scrollIntoView()" class="btn btn-outline mt-5">See Projects</button>
+
                 </div>
+            </div>
 
-                <button onclick="document.getElementById('projects').scrollIntoView()" class="btn btn-outline mt-5">See Projects</button>
+            <div id="projects" class="mx-10">
+                <h1 class="text-6xl font-bold text-center py-20 text-white">Projects</h1>
+                <div id="projects-container" class="flex flex-wrap gap-4 justify-center"></div>
+                <script src="projects.js"></script> 
+            </div>
+
+            <div class="flex justify-center mt-100 pb-5">
+                <button onclick="window.scrollTo({top: 0})" class="btn btn-outline btn-wide">Back to Top</button>
             </div>
         </div>
-
-        <div id="projects" class="mx-10">
-            <h1 class="text-6xl font-bold text-center py-20 text-white">Projects</h1>
-            <div id="projects-container" class="flex flex-wrap gap-4 justify-center"></div>
-            <script src="projects.js"></script> 
-        </div>
-
-        <div class="flex justify-center mt-100 pb-5">
-            <button onclick="window.scrollTo({top: 0})" class="btn btn-outline btn-wide">Back to Top</button>
-        </div>
-
     </body>
 </html>
