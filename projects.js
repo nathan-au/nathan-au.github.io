@@ -1,4 +1,12 @@
 const projects = [
+       {
+        name: "b(x) Study",
+        image_path: "./assets/screens/bxstudy_screen.png",
+        description: "Multi-agent pipeline that builds day-by-day exam study plans.",
+        tech_stack: ["Python", "Google ADK", "PyMuPDF", "Pydantic", "pymupdf4llm", "Gemini API"],
+        modal_id: "bxstudy_modal",
+        git_repo: "https://github.com/nathan-au/bx-study"   
+    },
     {
         name: "FabricMatch API",
         image_path: "./assets/screens/fabricmatchapi_screen.jpg",
