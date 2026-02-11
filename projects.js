@@ -1,7 +1,7 @@
 const projects = [
        {
         name: "b(x) Study",
-        image_path: "./assets/screens/bxstudy_screen.png",
+        image_path: "./assets/screen/bxstudy_screen.png",
         description: "Multi-agent pipeline that builds day-by-day exam study plans.",
         tech_stack: ["Python", "Google ADK", "PyMuPDF", "Pydantic", "pymupdf4llm", "Gemini API"],
         modal_id: "bxstudy_modal",
@@ -9,7 +9,7 @@ const projects = [
     },
     {
         name: "FabricMatch API",
-        image_path: "./assets/screens/fabricmatchapi_screen.jpg",
+        image_path: "./assets/screen/fabricmatchapi_screen.jpg",
         description: "Computer vision API that extracts body and facial data for personalized style recommendations.",
         tech_stack: ["Python", "FastAPI", "Ultralytics YOLO", "DeepFace", "OpenCV", "Hugging Face Transformers", "Gradio Client"],
         modal_id: "fabricmatchapi_modal",
@@ -17,7 +17,7 @@ const projects = [
     },
     {
         name: "Scaffold",
-        image_path: "./assets/screens/scaffold_screen.png",
+        image_path: "./assets/screen/scaffold_screen.png",
         description: "Reward-based learning reinforcement platform that transforms kids' screen time into learning time.",
         tech_stack: ["Next.js", "TypeScript", "Supabase", "Tailwind CSS", "Vercel", "ElevenLabs API", "Gemini API"],
         modal_id: "scaffold_modal",
@@ -25,7 +25,7 @@ const projects = [
     },
     {
         name: "Reel Digest",
-        image_path: "./assets/screens/reeldigest_screen.png",
+        image_path: "./assets/screen/reeldigest_screen.png",
         description: "Productivity tool for converting short form content into text summaries.",
         tech_stack: ["Python", "Ollama", "SQLite", "Telegram Bot API", "yt-dlp", "SpeechRecognition"],
         modal_id: "reeldigest_modal",
@@ -33,7 +33,7 @@ const projects = [
     },
     {
         name: "Instagram Opps v3",
-        image_path: "./assets/screens/instagramoppsv3_screen.png",
+        image_path: "./assets/screen/instagramoppsv3_screen.png",
         description: "Script for detecting your Instagram opps (people don't follow you back).",
         tech_stack: ["Python", "Playwright"],
         modal_id: "instagramoppsv3_modal",
@@ -41,7 +41,7 @@ const projects = [
     },
     {
         name: "WSB-BERT",
-        image_path: "./assets/screens/wsbbert_screen.png",
+        image_path: "./assets/screen/wsbbert_screen.png",
         description: "NLP sentiment analysis for the craziest online trading community: r/WallStreetBets.",
         tech_stack: ["Python", "FinBERT", "Reddit JSON API", "Ollama", "Hugging Face Transformers"],
         modal_id: "wsbbert_modal",
@@ -49,7 +49,7 @@ const projects = [
     },
     {
         name: "MA Crossover Trading Model",
-        image_path: "./assets/screens/macrossover_screen.png",
+        image_path: "./assets/screen/macrossover_screen.png",
         description: "Algorithmic trading model that implements the moving average crossover strategy.",
         tech_stack: ["Python", "yfinance", "Pandas", "Matplotlib"],
         modal_id: "macrossover_modal",
@@ -57,7 +57,7 @@ const projects = [
     },
     {
         name: "TeeFour AI",
-        image_path: "./assets/screens/teefourai_screen.png",
+        image_path: "./assets/screen/teefourai_screen.png",
         description: "End-to-end API framework for tax accounting automation.",
         tech_stack: ["Python", "SQLModel", "SQLite", "Ollama", "Pytesseract", "FastAPI", "pytest"],
         modal_id: "teefourai_modal",
@@ -65,7 +65,7 @@ const projects = [
     },
     {
         name: "PartCart",
-        image_path: "./assets/screens/partcart_screen.png",
+        image_path: "./assets/screen/partcart_screen.png",
         description: "Internal communication platform that simplifies the part procurement process for computer repair operations.",
         tech_stack: ["Vue.js", "Supabase", "Tailwind CSS"],
         modal_id: "partcart_modal",
@@ -73,7 +73,7 @@ const projects = [
     },
     {
         name: "Amicae",
-        image_path: "./assets/screens/amicae_screen.jpg",
+        image_path: "./assets/screen/amicae_screen.jpg",
         description: "Cross-platform mobile app for social and academic networking at Concordia University.",
         tech_stack: ["Flutter", "Firebase", "Dart", "Vertex AI", "Concordia Open Data API", "flutter_map"],
         modal_id: "amicae_modal",
@@ -81,7 +81,7 @@ const projects = [
     },
     {   
         name: "West Carleton Grad System",
-        image_path: "./assets/screens/gradd_screen.png",
+        image_path: "./assets/screen/gradd_screen.png",
         description: "Full-stack web app for creating and managing slideshows for graduation ceremonies.",
         tech_stack: ["HTML", "CSS", "Bootstrap", "JavaScript", "PHP", "SQL", "Google OAuth API", "TinyMCE"],
         modal_id: "gradd_modal",
