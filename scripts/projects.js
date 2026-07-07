@@ -1,5 +1,21 @@
 const projects = [
-       {
+    {
+        name: "Top n SPX",
+        image_path: "assets/screen/topnspx_screen.png",
+        description: "Quantitative backtesting pipeline to evaluate the returns of investing in only top S&P 500 companies. ",
+        tech_stack: ["Python", "Matplotlib", "Pandas", "yfinance"],
+        modal_id: "topnspx_modal",
+        git_repo: "https://github.com/nathan-au/top-n-spx"   
+    },
+    {
+        name: "Receipts, Payments & Growth",
+        image_path: "assets/screen/receiptspaymentsandgrowth_screen.png",
+        description: "Financial parsing tool with local AI assistant for freelancers.",
+        tech_stack: ["Python", "FastAPI", "Pandas", "Ollama", "Pydantic", "Next.js", "TypeScript"],
+        modal_id: "receiptspaymentsandgrowth_modal",
+        git_repo: "https://github.com/nathan-au/receipts-payments-and-growth"   
+    },
+    {
         name: "b(x) Study",
         image_path: "assets/screen/bxstudy_screen.png",
         description: "Multi-agent pipeline that builds day-by-day exam study plans.",
@@ -8,12 +24,12 @@ const projects = [
         git_repo: "https://github.com/nathan-au/bx-study"   
     },
     {
-        name: "FabricMatch API",
-        image_path: "assets/screen/fabricmatchapi_screen.jpg",
+        name: "FabricMatch",
+        image_path: "assets/screen/fabricmatch_screen.jpg",
         description: "Computer vision API that extracts body and facial data for personalized style recommendations.",
         tech_stack: ["Python", "FastAPI", "Ultralytics YOLO", "DeepFace", "OpenCV", "Hugging Face Transformers", "Gradio Client"],
         modal_id: "fabricmatchapi_modal",
-        git_repo: "https://github.com/nathan-au/fabric-match-api"   
+        git_repo: "https://github.com/nathan-au/fabric-match"   
     },
     {
         name: "Scaffold",
