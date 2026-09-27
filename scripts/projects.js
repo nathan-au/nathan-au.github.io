@@ -1,19 +1,19 @@
 const projects = [
     {
-        name: "Top n SPX",
-        image_path: "assets/screen/topnspx_screen.png",
-        description: "Quantitative backtesting pipeline to evaluate the returns of investing in only top S&P 500 companies. ",
-        tech_stack: ["Python", "Matplotlib", "Pandas", "yfinance"],
-        modal_id: "topnspx_modal",
-        git_repo: "https://github.com/nathan-au/top-n-spx"   
-    },
-    {
         name: "Receipts, Payments & Growth",
         image_path: "assets/screen/receiptspaymentsandgrowth_screen.png",
         description: "Financial parsing tool with local AI assistant for freelancers.",
         tech_stack: ["Python", "FastAPI", "Pandas", "Ollama", "Pydantic", "Next.js", "TypeScript"],
         modal_id: "receiptspaymentsandgrowth_modal",
         git_repo: "https://github.com/nathan-au/receipts-payments-and-growth"   
+    },
+    {
+        name: "Top n SPX",
+        image_path: "assets/screen/topnspx_screen.png",
+        description: "Quantitative backtesting pipeline to evaluate the returns of investing in only top S&P 500 companies. ",
+        tech_stack: ["Python", "Matplotlib", "Pandas", "yfinance"],
+        modal_id: "topnspx_modal",
+        git_repo: "https://github.com/nathan-au/top-n-spx"   
     },
     {
         name: "b(x) Study",
@@ -141,9 +141,3 @@ projects.forEach(project => {
     projectsContainer.appendChild(projectCard)
 
 })
-
- linksHTML += `
-        <a href="${link.href}" target="_blank">
-            <img class="w-15 h-15 hover:scale-115 transition-transform duration-200" src="${link.src}" alt="${link.alt}">
-        </a>
-    `
